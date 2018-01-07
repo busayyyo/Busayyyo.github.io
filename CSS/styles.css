@@ -5,8 +5,9 @@ html, body {
   height: 100%;
   width: 100%;
   background: #4099FF;
-  line-height: 1.3;
-  font-size: 1.1em;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  font-size: 1em;
 }
 
   main {
@@ -22,7 +23,8 @@ html, body {
 
 .about {
   background: #FFFFFF;
-  text-align: center;
+  color: rgba(0, 0, 0, 0.75);
+  text-align: center; 
   padding: 50px 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -38,7 +40,7 @@ html, body {
 .portfolio {
   padding: 50px 20px;
   display: flex;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .portfolio img {
@@ -51,6 +53,7 @@ html, body {
   background: #FFFFFF;
   text-align: center;
   padding: 70px 20px;
+  color: rgba(0, 0, 0, 0.75)
 }
 
 .wrapper {
@@ -75,15 +78,22 @@ html, body {
   padding: 50px 20px;
   color: #FFFFFF;
   text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.contact i {
+  color: #FFFFFF;
 }
 
 .contact button {
   border: none;
   border-radius: 50px;
   color: #4099FF;
-  padding: 5px;
+  margin-top: 25px;
+  padding: 10px;
   background: #FFFFFF;
   font-weight: bold;
+  cursor: pointer;
 }
 
 footer {
