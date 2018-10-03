@@ -1,74 +1,124 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial scale =1.0">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" href="CSS/styles.css">
-	<title> Busayo Oyewole - Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Busayo Oyewole - Personal Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="CSS/helpers.css">
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <!-- <link rel="stylesheet" href="CSS/debug.css"> -->
+
+  <style>
+    .hero {
+      background:linear-gradient(rgba(50, 115, 220, 0.3), rgba(50, 115, 220, 0.1)),url(images/hero-image.jpeg) center / cover ;
+      min-height: 87vh;
+      padding-top: 25vh;
+    }
+    .navbar {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.40);
+      padding: 5px;
+   }
+  .white {
+     color: white;
+   } 
+
+    .columns {
+      line-height: 1.4;
+      max-width: 30%;
+      margin: 0 auto;
+    }
+    .bio {
+      max-width: 70%;
+      margin: 10px auto;
+      margin-bottom: 30px;
+    }
+   
+    footer {
+      padding: 15px;
+    }
+  </style>
+
 </head>
-<body>
-	<main>
-  <section class="about">
-    <img src="https://render.bitstrips.com/v2/cpanel/5aa47968-2c49-4639-b3cd-3494846264b9-ab87c5e2-cccc-48b8-aaf2-20db72e0a668-v1.png?transparent=1&palette=1">
-    <h4> I'm Busayo</h4>
-    <h3> Writer, Web Developer and HCI enthusiast </h3>
-  </section>
 
-  <section class="portfolio">
-    <div>
-    <h3>Web Developing </h3>
-    <p>I'm a web developer from a psychology background. I taught myself how to code and I work well with: </p>
-      <ul>
-        <li>HTML5 </li>
-        <li> CSS3 </li>
-        <li> Javascript </li>
-        <li> Jquery </li>
-        <li> Bootstrap </li>
-        <li> vue.js </li>
-        <li> PHP </li>
-      </ul>
-
-    <p> Click <a href="https://codepen.io/Busayyyo/" target="blank">Here</a> to see some of the projects I've worked on. </p>
-    </div>
-    <div>
-      <a href="https://codepen.io/Busayyyo/" target="blank"> <img src="images\portfolio.png"> </a>
-    </div>
-
-  </section>
-
-  <section class="passions">
-      <h3> Other Passions</h3>
-      <aside class="wrapper">
-        <div class="col">
-          <i class="fa fa-book fa-2x" aria-hidden="true"></i>
-          <h4>Writing</h4>
-          <p>I provide various forms of content for organizations. I  think great writing is an integral part of design. I publish some of my thoughts on <a href="https://medium.com/@busayomi">Medium.</a></p>
+<body class="has-navbar-fixed-top">
+  <section>
+      <nav class="navbar is-fixed-top is-link heading has-text-weight-bold"> 
+        <div class="container">
+          <div class="navbar-brand">
+              <a role="button" class="navbar-burger is-white" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                  <span aria-hidden="true" class="white"></span>
+                  <span aria-hidden="true" class="white"></span>
+                  <span aria-hidden="true" class="white"></span>
+                </a>
+          </div>
+          <div class="navbar-menu" id="navMenu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="index.html">Home</a>
+            </div>
+    
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="work.html" class="navbar-link">
+                      Work
+                    </a>
+                
+                    <div class="navbar-dropdown">
+                      <a href="kudi.html" class="navbar-item">
+                        Kudi AI
+                      </a>
+                      <a href="fitabulous.html" class="navbar-item">
+                        Fitabulous
+                      </a>
+                      <a href="mood-diary.html" class="navbar-item">
+                        Mood Diary
+                      </a>
+                    </div>
+            </div>
+              <a class="navbar-item" href="process.html">Process</a>
+              <a class="navbar-item" href="about.html">About</a>
+              <a class="navbar-item" href="contact.html">Contact</a>
+            </div>
+          </div>
         </div>
+        </nav>
+    <div class="hero">
+        <div class="container has-text-centered">
 
-        <div class="col">
-          <i class="fa fa-laptop fa-2x" aria-hidden="true"></i>
-          <h4>Interaction Design</h4>
-          <p> Currently in grad school studying Usability Engineering. I'm passionate about how people use technology and how to improve on that experience .</p>
+            <h1 class="title is-1 has-text-black">
+                Busayo Oyewole
+            </h1>
+            <div class="columns">
+              <div class="column">
+                  <div class="subtitle has-text-centered">
+                    <span class="has-text-link has-text-weight-bold">[</span>
+                    <span>Designer</span>
+                    <span class="has-text-link has-text-weight-bold">]</span>
+                  </div>
+              </div>
+                <div class="column">
+                  <div class="subtitle has-text-centered">
+                    <span class="has-text-link has-text-weight-bold">[</span>
+                    <span>Developer</span>
+                    <span class="has-text-link has-text-weight-bold">]</span>
+                  </div>
+                </div>
+            </div>
+            <div class="bio">
+              <p>I'm a user centered designer and developer from a psychology background. I'm passionate about how people use technology and how to improve on that experience.</p>
+            </div>
+            <a href="work.html"><button class="is-medium button is-link">
+            View My Work
+            </button></a>
         </div>
-      </aside>
+      </div>
+    </div>
   </section>
-
-  <section class="contact">
-    <i class="fa fa-briefcase fa-2x" aria-hidden="true"></i>
-    <h3> I'm currently looking for exciting projects to work on</h3>
-    <p>Both in Writing and Web/Product development</p>
-    <a href="
-https://mail.google.com/mail/?view=cm&fs=1&to=busayomioyewole@gmail.com" target="blank"><button> Get in Touch > </button></a>
-  </section>
-
-  <footer>
-    Follow me on <a href="https://twitter.com/busayyyo" target="blank">TWITTER </a>. <a href="https://medium.com/@busayomi" target="blank">MEDIUM </a>. <a href="https://codepen.io/Busayyyo" target="blank">CODEPEN</a>.
-  </footer>
-</main>
-<script src="JS/script.js"></script>
-
+  <footer class="center has-background-grey-darker">
+      <p class="has-text-white heading">© Busayo Oyewole 2018</p>
+</footer>
+  <script src="JS/index.js"></script>
 </body>
 </html>

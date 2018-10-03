@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="CSS/helpers.css">
+    <link rel="stylesheet" href="/Users/user/Busayyyo.github.io/CSS/styles.css">
+    <!-- <link rel="stylesheet" href="CSS/debug.css"> -->
+    <style>
+        .hero {
+            background: linear-gradient(rgba(50, 115, 220, 0.5), rgba(50, 115, 220, 0.3)),url(/Users/user/Busayyyo.github.io/images/about.jpeg) 60% 100%;
+
+        }
+        .img {
+    border-radius: 50%;
+    max-width: 70%;
+    }
+
+    .section {
+        padding: 80px;
+    }
+
+    .skill-section {
+        min-height: 30vh;
+        padding: 30px;
+        background: hsla(217, 96%, 74%, 0.3);
+    }
+
+    .skill {
+        border-radius: 20px;
+        background: rgb(50, 115, 220);
+        margin-right: 5px;
+        margin-bottom: 10px;
+        color: white;
+        text-align: center;
+        min-width: 150px;
+    }
+    .mb {
+        min-height: 400px;
+        margin-top: -130px;
+    }
+    .text {
+        max-width: 80%;
+        line-height: 2.3;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+            <nav class="navbar is-fixed-top is-link heading has-text-weight-bold"> 
+                    <div class="container">
+                      <div class="navbar-brand">
+                          <a role="button" class="navbar-burger is-white" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                              <span aria-hidden="true" class="white"></span>
+                              <span aria-hidden="true" class="white"></span>
+                              <span aria-hidden="true" class="white"></span>
+                            </a>
+                      </div>
+                      <div class="navbar-menu" id="navMenu">
+                        <div class="navbar-start">
+                          <a class="navbar-item" href="index.html">Home</a>
+                        </div>
+                
+                        <div class="navbar-end">
+                                <div class="navbar-item has-dropdown is-hoverable">
+                                        <a href="work.html" class="navbar-link">
+                                          Work
+                                        </a>
+                                    
+                                        <div class="navbar-dropdown">
+                                          <a href="kudi.html" class="navbar-item">
+                                            Kudi AI
+                                          </a>
+                                          <a href="fitabulous.html" class="navbar-item">
+                                            Fitabulous
+                                          </a>
+                                          <a href="mood-diary.html" class="navbar-item">
+                                            Mood Diary
+                                          </a>
+                                        </div>
+                                </div>
+                          <a class="navbar-item" href="process.html">Process</a>
+                          <a class="navbar-item" href="about.html">About</a>
+                          <a class="navbar-item" href="contact.html">Contact</a>
+                        </div>
+                      </div>
+                    </div>
+            </nav>
+    </header>
+    <div class="hero">
+        <div class="container">
+            <h1 class="title is-6 has-text-weight-bold"><span class="has-text-link has-text-weight-bold">[</span>
+                <span class="has-text-white">Bio</span>
+                <span class="has-text-link has-text-weight-bold">]</span></h1>
+                <h2 class="subtitle is-2 has-text-white">Who am I?</h2>
+        </div>
+    </div>
+    <section class="section about">
+        <div class="container">
+            <div class="columns center-column">
+                <div class="column has-text-centered center-column mb">
+                    <img src="/Users/user/Busayyyo.github.io/images/bio-pic.jpg" class="img">
+                    <button class="button is-link is-medium"> View My Resume</button>
+                </div>
+                <div class="column text has-text-centered">
+                    <p>Hi there! I'm Busayo Oyewole, a grad student studying usability engineering and building a career in product development.
+                    </p>
+                      <p>  
+                        Like all people who wear many hats, I identify to all sorts of titles:
+                    </p>
+                    <p>
+                        <b>(i) human centered designer:</b> because I care about the why and how people do things and how to help solve their real problems
+                        with technology.
+                        I believe that the difference between great and mediocre products is listening to people and empathising with them.
+                        Asking questions such as: "where does it hurt?" and "how can I help?" can make a difference, so I ask it often, in a non-cheesy way, and employ the user centered design methodology to provide and implement solutions
+                    </p>
+                    <p>
+                        <b>(ii) developer: </b>because I solve problems with client facing technologies such as html, css, javascript and react.js.
+                    </p>
+                    <p>
+                        When I'm not researching an idea or developing one, I enjoy reading and writing fiction :)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="skill-section"> 
+        <div class="container">
+            <h2 class="subtitle has-text-centered has-text-weight-bold">Skills & Toolsets</h2>
+            <div class="columns is-multiline">
+               <div class="column skill">Design thinking</div>
+               <div class="column skill">User Research</div>
+               <div class="column skill">UCD methodology</div>
+               <div class="column skill">prototyping</div>
+               <div class="column skill">wireframing</div>
+               <div class="column skill">html5</div>
+               <div class="column skill">css3</div>
+               <div class="column skill">Sass</div>
+               <div class="column skill">Bootstrap</div>
+               <div class="column skill">javascript</div>
+               <div class="column skill">React.js</div>
+               <div class="column skill">git</div>
+            </div>
+        </div>
+    </section>
+    <footer class="center has-background-grey-darker">
+        <p class="has-text-white heading">© Busayo Oyewole 2018</p>
+    </footer>
+    <script src="JS/index.js"></script>
+</body>
+</html>

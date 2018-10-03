@@ -1,195 +1,42 @@
-* {
-  box-sizing: border-box;
-}
-html, body {
-  height: 100%;
-  width: 100%;
-  background: #4099FF;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 1.4;
-  font-size: 1em;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+.text {
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 800px;
+    padding: 20px;
+    line-height: 2.2;
+    font-size: 1.09rem;
 }
 
-  main {
-  width: 70%;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 5px 10px 8px 10px #408BF0;
-}
-
- a {
-  font-weight: bold;
+.navbar {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.40);
+    padding: 5px;
  }
 
-.about {
-  background: #FFFFFF;
-  color: #4099FF;
-  text-align: center;
-  padding: 50px 20px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  margin-top: 40px;
-}
-
-.about img {
-  height: 200px;
-  border: 2px solid #4099FF;
-  border-radius: 50%;
-  box-shadow: 3px 3px 3px 3px #4099FF;
-}
-
-.about h4 {
-  font-size: 3em;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.portfolio {
-  padding: 50px 20px;
-  display: flex;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.5;
-}
-
-.portfolio img {
-  height: 170px;
-  margin-left: 60px;
-  margin-top: 120px;
-}
-
-.portfolio a {
-  color: rgba(0, 0, 0, 0.75);
-}
-
-.portfolio p a:hover {
-  background-color: #FFFFFF;
-  text-decoration: none;
-}
-
-
-.passions {
-  background: #FFFFFF;
-  text-align: center;
-  padding: 70px 20px;
-  color: rgba(0, 0, 0, 0.75);
-  line-height: 1.5;
-  font-size: 15px;
-  text-indent: 2px;
-}
-
-
-.wrapper {
-  display: flex;
-  flex: 0 1 auto;
-}
-
-.col {
-  width: 50%;
-  margin-right: 15px;
-  border: 1px solid #4099FF;
-  border-radius: 10px;
-  box-shadow: 2px 2px 4px 3px #4099FF;
-}
-
-.col a, i {
-  color: #4099FF;
-}
-
-
-.contact {
-  padding: 50px 20px;
-  color: #FFFFFF;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.contact i {
-  color: #FFFFFF;
-}
-
-.contact button {
-  border: none;
-  border-radius: 50px;
-  color: #4099FF;
-  margin-top: 25px;
-  padding: 10px;
-  background: #FFFFFF;
-  font-weight: bold;
-  cursor: pointer;
+.hero{
+    min-height:40vh;
+    padding-top: 150px; 
+    text-align: center;
 }
 
 footer {
-  background: #E4E4E2;
-  padding: 20px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  margin-bottom: 40px;
+    padding: 10px;
+    min-height: 10vh;
 }
 
-footer a {
-  padding: 3px;
-  text-decoration: none;
-  font-size: 12px;
-  color: #4099FF;
-  font-weight: bold;
+.white {
+    color: white;
 }
 
-/*portfolio img animation*/
-.portfolio img:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
+ol {
+    list-style-type: lower-roman;
+}
+ ul {
+    list-style: inherit;
 }
 
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-/*Media Queries */
-@media only screen and (max-width:660px) {
-  main {
-    width: 100%;
+.mt {
+    margin-top: 25px;
   }
-  body {
-    margin: 0;
+  .pt {
+    padding-top: 20px;
   }
-  .about {
-    border-radius: 0;
-  }
-  footer {
-    border-radius: 0;
-  }
-
-}
-
-@media only screen and (max-width: 475px) {
-  .portfolio {
-    flex-wrap: wrap;
-    text-align: center;
-  }
-
-  .port-img {
-    margin: 0 auto;
-  }
-
-  .wrapper {
-    flex-wrap: wrap;
-  }
-
-  .col {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 15px;
-  }
-
-
-}
