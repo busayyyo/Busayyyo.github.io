@@ -49,7 +49,9 @@ p {
     line-height: 30px;
     letter-spacing: 0.2px;
 }
-
+span {
+	color: #777;
+}
 strong {
   font-weight: 400;
 }
@@ -324,7 +326,7 @@ a:hover, a:active, a:focus {
   padding-left: 22px;
 }
 
-#about ul li {
+ li {
   color: #777;
   font-size: 16px;
   font-weight: 400;
@@ -386,39 +388,6 @@ a:hover, a:active, a:focus {
 #portfolio hr {
 	width: 82px;
 	margin: 32px auto;
-}
-
-
-
-/*---------------------------------------
-   Single Project section
------------------------------------------*/
-
-#single-project {
-  text-align: center;
-}
-
-#single-project .col-md-12,
-#single-project .col-md-6,
-#single-project .col-md-4 {
-  padding-left: 0px;
-  padding-bottom: 22px;
-}
-
-#single-project .col-md-12 {
-  padding-top: 42px;
-}
-
-#single-project .text-center strong {
-  display: block;
-  padding-top: 12px;
-}
-
-#single-project a {
-  color: #555;
-  font-weight: bold;
-  letter-spacing: 1px;
-  padding-left: 14px;
 }
 
 
@@ -625,6 +594,10 @@ a:hover, a:active, a:focus {
   width: 50%;
 }
 
+.md-img-center {
+display: block;
+	margin: 5px auto;
+}
 .justify-center {
 	display: block;
 	margin-left: auto;
@@ -632,10 +605,7 @@ a:hover, a:active, a:focus {
 	width: 75%;
 }
 
-.profile-img {
-	height: 320px;
-	width: 90%;
-}
+
 
 .text-left {
 	text-align: left;
@@ -754,7 +724,7 @@ footer .footer-copyright {
 @media (max-width: 767px) {
 
   h1 {
-    font-size: 38px;
+    font-size: 22px;
   }
 
   h2 {
@@ -776,6 +746,22 @@ footer .footer-copyright {
     text-align: center;
   }
 
+	.img-center {
+		width: 100%;
+		margin: 5px auto;
+	}
+
+	.dropdown:hover>.dropdown-menu {
+	  display: none;
+	}
+	.fa-caret-down {
+		display: none;
+	}
+
+	.social-icon {
+		text-align: center;
+	}
+
   #about .col-md-8 img {
     padding-right: 0px;
   }
@@ -785,12 +771,17 @@ footer .footer-copyright {
     line-height: 40px;
   }
 
-  footer {
+	footer {
     text-align: center;
   }
 
   footer .col-md-4 {
     padding-top: 42px;
+		text-align: center;
   }
+/*
+	footer .text-center {
+		text-align: center; */
+	}
 
 }
