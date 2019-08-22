@@ -71,7 +71,7 @@ strong {
 }
 
 .box {
-	width: 60%;
+	max-width: 60%;
 	margin: 40px auto;
 	min-height: 300px;
 	border: 1px solid #777;
@@ -724,7 +724,8 @@ footer .footer-copyright {
 @media (max-width: 767px) {
 
   h1 {
-    font-size: 22px;
+    font-size: 20px;
+		line-height: 30px;
   }
 
   h2 {
@@ -733,7 +734,7 @@ footer .footer-copyright {
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .section-title h2 {
@@ -762,6 +763,10 @@ footer .footer-copyright {
 		text-align: center;
 	}
 
+	.box {
+		max-width: 90%;
+	}
+
   #about .col-md-8 img {
     padding-right: 0px;
   }
@@ -779,6 +784,8 @@ footer .footer-copyright {
     padding-top: 42px;
 		text-align: center;
   }
+
+
 /*
 	footer .text-center {
 		text-align: center; */
