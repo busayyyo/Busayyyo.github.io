@@ -83,6 +83,7 @@ strong {
 	margin-bottom: 50px;
 }
 
+
 /*---------------------------------------
     General
 -----------------------------------------*/
@@ -138,6 +139,10 @@ a:hover, a:active, a:focus {
   letter-spacing: 4px;
 }
 
+.align-items-center {
+	display: flex;
+	align-items: center;
+}
 
 /*---------------------------------------
     Preloader section
