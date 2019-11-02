@@ -1,0 +1,73 @@
+/*  General */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-image: url(images/ignasi_pattern_s.png);
+  color: #666;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+.bg-shade {
+  background-color: #ebebeb;
+}
+.card-container {
+  max-width: 49rem;
+  min-height: 100%;
+  margin: auto;
+}
+.navbar {
+  padding: .7rem 0 !important;
+}
+.rect {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  -webkit-box-shadow: 4px 0px 8px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 4px 0px 8px 0px rgba(0,0,0,0.5);
+  box-shadow: 4px 0px 8px 0px rgba(0,0,0,0.5);
+  margin-bottom: 30px;
+}
+.rect:hover {
+  -webkit-box-shadow: 2px 0px 2px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 2px 0px 2px 0px rgba(0,0,0,0.25);
+  box-shadow: 2px 0px 2px 0px rgba(0,0,0,0.25);
+}
+
+.project-link:hover {
+  text-decoration: none;
+}
+
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background: #1abc9c;
+}
+
+/*  Pages */
+
+.content {
+  border-radius: 2px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  min-height: 100%;
+}
+
+/* media queries */
+@media handheld and (max-width: 600px),
+       screen and (max-width: 600px) {
+    .rect {
+      display: flex;
+      flex-direction: column;
+    }
+}
