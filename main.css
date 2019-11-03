@@ -70,4 +70,7 @@ img {
       display: flex;
       flex-direction: column;
     }
+    .card-container {
+      padding: 20px;
+    }
 }
