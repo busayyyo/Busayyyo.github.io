@@ -8,103 +8,84 @@
   <link rel="stylesheet" type="text/css" href="main.css?v1">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="">
-  <div class="card-container bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand nav-link brand-color pl-4" href="index.html">Busayo Oyewole</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<body class="blue-sec">
+  <div class="">
+    <nav class="navbar navbar-expand-lg navbar-light nav-color navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand nav-link brand-color pl-4" href="index.html">Busayo Oyewole</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav pr-3">
+            <li class="nav-item pr-5">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item pr-5">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item pr-5">
+              <a class="nav-link" href="https://medium.com/@busayomi" target="_blank">Blog</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn cta-btn text-white">Download CV</button>
+            </li>
+          </ul>
+        </div>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav pr-3">
-          <li class="nav-item">
-            <a class="nav-link brand-color" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link brand-color" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link brand-color" href="https://medium.com/@busayomi" target="_blank">Blog</a>
-          </li>
-        </ul>
       </div>
+    
     </nav>
   </div>
 
-  <div class="container pb-5">
+ 
 
-    <main class="card-container pb-5">
-      <section class="pb-2 pt-2 text-dark bg-shade">
-        <h1 class="small pt-2">Titles that apply:</h1>
-        <p>UX designer | Usability engineer | Product designer | Interaction Designer | Frontend Dev </p>
-        <h2 class="small">Educational background:</h2>
-        <p>BSc Psychology | MSc Usability Engineering</p>
+    <main class="pb-5">
+      <section class=" text-dark  hero">
+        <div class="container d-flex flex-row justify-content-between">
+          <div class="p-3 mt-5 col-6">
+            <h1>Product designer <br> <span class="brand-color">Busayo Oyewole</span></h1> 
+          
+          <p class="text-14 mt-4 mb-4">A product designer with about <b>4 years experience </b>across diverse industries,
+            designing and creating intuitive interactive products</p>
+            <button class="btn cta-btn text-white">
+              <a href="projects.html" class="text-white text-decoration-none project-link">View Projects</a>
+            </button>
+          </div>
+          <div class="col-7 pro-container mt-4">
+            <img src="images/prof-img.jpg" alt="" class="profile-img">
+          </div>
+        </div>
+      </section>
+    
+
+      <section class="blue-sec pt-5 pb-5">
+        <div class="container d-flex flex-row align-items-center">
+          <p class="col-6 font-weight-bold h4">Human centered designer, <br> Writer, <br> Javascript Curious </p> 
+          <div class="col-6">
+            <div>
+              <p>
+                Hi there, my name is Busayo and I’m a UX and usability engineer at <a href="">Instaff Jobs GmbH</a>. I have a BSc in Pschology and an MSc in Usability engineering.
+              </p>
+              <p>
+                I design experiences, services and products with a balance of business orientation and human centered design approach.
+              </p>
+              <p>
+                I enjoy solving problems and writing. In my free time, I serve as the managing editor at millennial poets.
+              </p>
+            </div>
+            <button class="btn cta-btn text-white mt-3">Download CV</button>
+          </div>
+        </div>
+        
       </section>
       <!-- <hr> -->
-      <section class="pt-3 mt-4">
-        <h3 class="h6 pb-2 pl-3">Featured Projects</h3>
-        <a href="instaff.html" class="text-dark project-link">
-          <div class="rect w-100">
-            <div class="col-md-3 col-sm-12" style="padding:0">
-              <img src="images/jobs.svg" alt="">
-            </div>
-            <div class="card-body col-md-9 col-sm-12">
-              <h5 class="card-title">Instaff jobs</h5>
-              <p class="card-text">Series of projects that involves optimising short term staffing for enterprise customers and job seekers</p>
-            </div>
-          </div>
-        </a>
-        <a href="siegwerk.html" class="text-dark project-link">
-          <div class="rect w-100">
-            <div class="col-md-3 col-sm-12" style="padding:0">
-              <img src="images/siegwerk-logo.png" alt="">
-            </div>
-            <div class="card-body col-md-9 col-sm-12">
-              <h5 class="card-title">Siegwerk Digital</h5>
-              <p class="card-text">Series of projects that involves digitalizing a 150 year old company services and processes</p>
-            </div>
-          </div>
-        </a>
-        <a href="kudibot.html" class="text-dark project-link">
-          <div class="rect w-100">
-            <div class="col-md-3 col-sm-12" style="padding:0">
-              <img src="images/kudi-thumbnail.png" alt="">
-            </div>
-            <div class="card-body col-md-9 col-sm-12">
-              <h5 class="card-title">Kudi bot</h5>
-              <p class="card-text">Designing an AI powered conversational agent for financial services.</p>
-            </div>
-          </div>
-        </a>
-        <a href="mood-diary.html" class="text-dark project-link">
-          <div class="rect w-100">
-            <div class="col-md-3 col-sm-12" style="padding:0">
-              <img src="images/mood-diary.png" alt="">
-            </div>
-            <div class="card-body col-md-9 col-sm-12">
-              <h5 class="card-title">Mood diary</h5>
-              <p class="card-text">Designing a mobile app to help track daily moods.</p>
-            </div>
-          </div>
-        </a>
-        <a href="killer-shell.html" class="text-dark project-link">
-          <div class="rect w-100">
-            <div class="col-md-3 col-sm-12" style="padding:0">
-              <img src="images/killer-shell.png" alt="">
-            </div>
-            <div class="card-body col-md-9 col-sm-12">
-              <h5 class="card-title">Killer Shell</h5>
-              <p class="card-text">Designing a CKAD exam simulator for Kubernetes programmers.</p>
-            </div>
-          </div>
-        </a>
-      </section>
-    </main>
-  </div>
-  <footer class="footer card-body nav-color bg-dark">
+   
+  <!-- <footer class="footer card-body nav-color bg-dark">
     <div class="card-container">
       <div class="row">
         <p class="small col-md-4 col-sm-12"><a href="https://www.linkedin.com/in/busayomi/" class="brand-color" target="_blank">Linkedin</a></p>
@@ -112,7 +93,7 @@
         <p class="small col-md-4 col-sm-12 text-right"> <a href="https://codepen.io/Busayyyo" class="brand-color" target="_blank">Codepen</a></p>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
