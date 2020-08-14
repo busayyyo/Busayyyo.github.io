@@ -30,6 +30,10 @@ h1 {
   background-color: var(--bg-light);
 }
 
+.blue-bg {
+  background-color: var(--main-bg-color);
+}
+
 .brand-color {
   color: var(--main-bg-color)!important;
 }
