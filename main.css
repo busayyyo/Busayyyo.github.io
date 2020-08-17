@@ -39,6 +39,7 @@ h1 {
 }
 
 
+
 .card-container {
   max-width: 49rem;
   /* min-height: 100%; */
@@ -50,6 +51,13 @@ h1 {
   border-radius: 50px !important;
   padding: 0.6em 3em !important;
   font-size: 14px;
+}
+
+.flexdir {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero {
@@ -110,6 +118,8 @@ h1 {
   width: 100%;
 }
 
+
+
 /*  Pages */
 
 .content {
@@ -122,9 +132,23 @@ h1 {
 /* media queries */
 @media handheld and (max-width: 600px),
        screen and (max-width: 600px) {
-    .rect {
+  
+    .rect{
       display: flex;
       flex-direction: column;
+    }
+
+    .flexdir {
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 2.3rem !important;
+    }
+
+
+    .hero {
+      min-height: 100%;
     }
     .card-container {
       padding: 20px;
