@@ -7,65 +7,65 @@
   <title>Busayo Oyewole - portfolio site</title>
   <link rel="stylesheet" type="text/css" href="main.css?v1">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="">
-  <div class="">
-    <nav class="navbar navbar-expand-lg navbar-light nav-color navbar-fixed-top">
-      <div class="container">
-        <a class="navbar-brand nav-link pl-4" href="index.html">Busayo Oyewole</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<body class="bg-yellow-50 antialiased text-gray-700">
+  <nav class="py-4 sm:text-lg">
+    <div class="px-2 sm:px-0 container mx-auto flex flex-row flex-wrap items-center text-gray-700">
+        <a href="index.html" class="mr-auto">
+            Busayo Oyewole
+        </a>
+        <button
+            class="sm:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-700"
+            aria-expanded="false" onclick="openNav()">
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
         </button>
-  
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav pl-3 pr-2">
-            <li class="nav-item pl-3 pr-2">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item pl-3 pr-2">
-              <a class="nav-link brand-color" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item pl-3 mr-3">
-              <a class="nav-link" href="https://medium.com/@busayomi" target="_blank">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a href="Busayo_Oyewole_CV.pdf" target="_blank" download="Busayo_Oyewole_CV.pdf">
-                    <button class="btn cta-btn text-white">Download CV</button>
-                </a>
-            </li>
-          </ul>
+
+        <div
+            class="bg-white sm:bg-transparent hidden px-6 w-full sm:w-auto py-4 sm:mt-0 sm:block flex flex-col flex-grow sm:flex-grow-0 sm:flex-row menu-bg text-center rounded shadow-sm sm:shadow-none sm:bg-transparent"
+            id="navlinks">
+            <!-- <a href="/market" class="sm:mr-4 py-2 text-base sm:text-lg block sm:inline border-b sm:border-none">Market</a> -->
+            <a href="projects.html"
+               class="sm:mr-4 py-2 block sm:inline border-b sm:border-none">
+                Featured work
+            </a>
+            <a href="about.html" class="sm:mr-4 py-2 block sm:inline border-b sm:border-none">
+               About
+            </a>
+            <a href="contact.html"
+               class="sm:mr-4 py-2 block sm:inline border-b sm:border-none">
+                <span class="text-yellow-600 font-bold"> Contact</span>
+            </a>
+            <a href="Busayo_Oyewole_CV.pdf" target="_blank" download="Busayo_Oyewole_CV.pdf" class="block sm:inline mt-2 sm:mt-0">
+                <button class="btn bg-gray-700 hover:bg-yellow-600 rounded px-8 py-3 text-white">Download CV</button>
+            </a>
         </div>
+    </div>
+  </nav>
 
-      </div>
-    
-    </nav>
-  </div>
+  <div class="container mx-auto mt-5">
 
-  <div class="container mt-5">
-    <h3 class="h4 pb-5 pl-3 text-center">Contact details</h3>
+    <main class="card-container content p-8 rounded-lg shadow-lg">
 
-    <main class="card-container content p-4">
+      <div class="">
 
-      <div class="row">
-
-        <div class="col-md-6">
-          <img src="https://media.giphy.com/media/UuGtHjJ5gqYqsjqwkP/giphy.gif">
-        </div>
-        <div class="col-md-6 align-self-center">
-          <div class="card">
-
-            <div class="card-body">
-                <p class="small">Contact details</p>
-              <p class="small"><span class="font-weight-bold">Email: </span>  <a href="mailto:busayomioyewole@gmail.com">busayomioyewole@gmail.com</a> </p>
+            <div class="mb-6">
+                <p class="font-bold mb-4">Contact details</p>
+              <p class="small"><span class="font-weight-bold">Email: </span>  <a href="mailto:busayomioyewole@gmail.com"><span class="text-yellow-600">busayomioyewole@gmail.com</span></a> </p>
               <p class="small"><span class="font-weight-bold">Mobile: </span> +4915210186641</p>
             </div>
             <hr>
-            <div class="card-body">
-                <p class="small">Socials</p>
-              <p class="small"><span class="font-weight-bold">Linkedin: </span> <a href="https://www.linkedin.com/in/busayomi/" target="_blank">linkedin.com/in/busayomi</a></p>
-              <p class="small"><span class="font-weight-bold">Codepen: </span> <a href="https://codepen.io/Busayyyo" target="_blank">codepen.io/Busayyyo</a></p>
+            <div class="mt-6">
+                <p class="font-bold mb-4">Socials</p>
+              <p class="small"><span class="font-weight-bold">Linkedin: </span> <a href="https://www.linkedin.com/in/busayomi/" target="_blank"><span class="text-yellow-600">linkedin.com/in/busayomi</span></a></p>
+              <p class="small"><span class="font-weight-bold">Twitter: </span> <a href="https://twitter.com/Busayyyo" target="_blank"><span class="text-yellow-600">twitter.com/Busayyyo</span></a></p>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@
 
 
     </main>
- 
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

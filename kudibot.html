@@ -7,119 +7,124 @@
   <title>Busayo Oyewole - portfolio site</title>
   <link rel="stylesheet" type="text/css" href="main.css?v1">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="">
-  <div class="">
-    <nav class="navbar navbar-expand-lg navbar-light nav-color navbar-fixed-top">
-      <div class="container">
-        <a class="navbar-brand nav-link pl-4" href="index.html">Busayo Oyewole</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<body class="bg-yellow-50 antialiased text-gray-700">
+  <nav class="py-4 sm:text-lg">
+    <div class="px-2 sm:px-0 container mx-auto flex flex-row flex-wrap items-center text-gray-700">
+        <a href="index.html" class="mr-auto">
+            Busayo Oyewole
+        </a>
+        <button
+            class="sm:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-700"
+            aria-expanded="false" onclick="openNav()">
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
         </button>
-  
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav pl-3 pr-2">
-            <li class="nav-item pl-3 pr-2">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item pl-3 pr-2">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item pl-3 mr-3">
-              <a class="nav-link" href="https://medium.com/@busayomi" target="_blank">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a href="Busayo_Oyewole_CV.pdf" target="_blank" download="Busayo_Oyewole_CV.pdf">
-                    <button class="btn cta-btn text-white">Download CV</button>
-                </a>
-            </li>
-          </ul>
+
+        <div
+            class="bg-white sm:bg-transparent hidden px-6 w-full sm:w-auto py-4 sm:mt-0 sm:block flex flex-col flex-grow sm:flex-grow-0 sm:flex-row menu-bg text-center rounded shadow-sm sm:shadow-none sm:bg-transparent"
+            id="navlinks">
+            <!-- <a href="/market" class="sm:mr-4 py-2 text-base sm:text-lg block sm:inline border-b sm:border-none">Market</a> -->
+            <a href="projects.html"
+               class="sm:mr-4 py-2 block sm:inline border-b sm:border-none">
+                Featured work
+            </a>
+            <a href="contact.html" class="sm:mr-4 py-2 block sm:inline border-b sm:border-none">
+                About
+            </a>
+            <a href="contact.html"
+               class="sm:mr-4 py-2 block sm:inline border-b sm:border-none">
+                Contact
+            </a>
+            <a href="Busayo_Oyewole_CV.pdf" target="_blank" download="Busayo_Oyewole_CV.pdf" class="block sm:inline mt-2 sm:mt-0">
+                <button class="btn bg-gray-700 hover:bg-yellow-600 rounded px-8 py-3 text-white">Download CV</button>
+            </a>
         </div>
-
-      </div>
-    
-    </nav>
-  </div>
+    </div>
+</nav>
 
 
-  <section class="container pb-2">
-      <a href="projects.html" class="d-block pt-3 brand-color ml-4"> <img src="images/bi_arrow-left-circle-fill.svg" style="width:24px" class="mr-2">Back to projects</a>
+  <section class="container mx-auto pb-2">
+    <a href="projects.html" class="flex items-center ml-4"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 mr-2">
+<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
+</svg>Back to projects</a>
 
 
-    <main class="card-container content p-5 pb-5">
       <h1 class="h2 text-center">Kudi Bot</h1>
       <h2 class="h6 text-center mb-4">Designing a chatbot for financial services</h2>
-      <div class="mx-auto mb-4" style="width: 50%; height: 50%; border: 1px solid #e5e5e5;">
+      <div class="mx-auto mb-4" style="width: 50%; height: 50%;">
           <img src="images/kudi-screenshot.png" alt="Kudi screenshot">
       </div>
-      </main>
+
   </section>
 
-      <section class="container blue-sec p-5 mb-5 rounded">
-          <div class="card-container card-body text-center">
-            <p class="h4 font-weight-bold">Summary</p>
-            <p>Kudi bot is one of the products offered by Kudi Inc (YC '17). <a href="www.kudi.com" target="_blank">Kudi Inc</a> is a fintech company in Lagos, Nigeria that provides financial services to unbanked people across Africa.</p>
-            <p class="h4 font-weight-bold"></span>The challenge</p>
-            <p>The challenge of this project was to design a financial service, where people could transfer money through chat, buy airtime vouchers and pay their bills. It was the first of its kind in Nigeria - to offer financial service via a chatbot.</p>
-            <p class="h4 font-weight-bold">Role</p>
-            <p> Interaction designer & UX writer</p>
-            <p class="h4 font-weight-bold">Period</p>
-            <p>June 2016 - September 2017</p>
-            <p class="h4 font-weight-bold">Target audience</p>
-            <p>The target audience for this product were Nigerians between the ages of 16 - 45, who were conversant with apps such as whatsapp and own a bank account.</p>
-            <p class="h4 font-weight-bold">Constraints</p>
-            <p>For a delicate industry such as finance service, experimenting with a budding technology like natural language processing, artificial intellgence and chatbot resulted in a number of constraints that ranged from technology to security concerns. And of course, being a startup company, there was the budget and time constraint. How these constraints were met and tackled are further discussed in the process below.</p>
+      <section class="container mx-auto bg-white p-8 my-12 rounded">
+          <div class="card-container card-body">
+            <p class="text-2xl font-bold">Summary</p>
+            <p class="pt-3 pb-8">Kudi bot is one of the products offered by Kudi Inc (YC '17). <a href="www.kudi.com" target="_blank">Kudi Inc</a> is a fintech company in Lagos, Nigeria that provides financial services to unbanked people across Africa.</p>
+            <p class="text-2xl font-bold"></span>The challenge</p>
+            <p class="pt-3 pb-8">The challenge of this project was to design a financial service, where people could transfer money through chat, buy airtime vouchers and pay their bills. It was the first of its kind in Nigeria - to offer financial service via a chatbot.</p>
+            <p class="text-2xl font-bold">Role</p>
+            <p class="pt-3 pb-8"> Interaction designer & UX writer</p>
+            <p class="text-2xl font-bold">Period</p>
+            <p class="pt-3 pb-8">June 2016 - September 2017</p>
+            <p class="text-2xl font-bold">Target audience</p>
+            <p class="pt-3 pb-8">The target audience for this product were Nigerians between the ages of 16 - 45, who were conversant with apps such as whatsapp and own a bank account.</p>
+            <p class="text-2xl font-bold">Constraints</p>
+            <p class="pt-3 pb-8">For a delicate industry such as finance service, experimenting with a budding technology like natural language processing, artificial intellgence and chatbot resulted in a number of constraints that ranged from technology to security concerns. And of course, being a startup company, there was the budget and time constraint. How these constraints were met and tackled are further discussed in the process below.</p>
           </div>
         </section>
 
-        <section class="container pb-2">
+        <section class="container mx-auto pb-2">
               <div class="card-container">
 
-                  <div class="mx-auto mb-4" style="width: 50%; height: 50%; border: 1px solid #e5e5e5;">
-                      <img src="images/kudi-sample.png" alt="screenshot sample">
-                    </div>
-                  <h3 class="text-center font-weight-bold pt-4">Process</h3>
-                  <p class="text-center">To design this solution, I went through a series of steps to get the job done:</p>
-                  <ol type="I">
-                    <li class="pb-4"> <span class="font-weight-bold">Research - Contextual Inquiry:</span> Since our target audience are supposed to be conversant with chatapps, I used whatsapp as my primary medium of inquiry. There were two main objectives to this inquiry:
-                      <ol type="a">
+                  <h3 class="font-bold text-4xl mb-2 text-center pt-4">Process</h3>
+                  <p class="text-center mb-2">To design this solution, I went through a series of steps to get the job done:</p>
+                  <ol type="I" class="mb-12">
+                    <li class="pb-4"> <span class="font-bold text-xl">Research - Contextual Inquiry:</span> Since our target audience are supposed to be conversant with chatapps, I used whatsapp as my primary medium of inquiry. There were two main objectives to this inquiry:
+                      <ol type="a" class="list-decimal mt-2">
                         <li>How people relate to the idea of financial chatbot by asking questions such as:
-                          <ul>
+                          <ul class="list-disc list-inside">
                             <li>How often do you visit banking halls?</li>
                             <li>Would you prefer to do your banking transactions through chats if you could?</li>
                             <li>If you wouldn't, why? What are your concerns?</li>
                           </ul>
                         </li>
                         <li>How people communicate with bankers in real life (so as to train the bot accordingly) by asking questions such as:
-                          <ul>
+                          <ul class="list-disc list-inside">
                             <li>what do you say when you want a withdrawal?</li>
                             <li>How do you express to the cashier that you need to make a transfer?</li>
                           </ul>
                         </li>
                         </ol>
                         </li>
-                      <li class="pb-4"><span class="font-weight-bold">Analysis using scenarios: </span>Based on the data gathered, I came up with a full scale scenario in which a typical user would use the chat app based on the goals they set to achieve. Hence, there were multiple scenarios:
-                        <ul>
+                      <li class="pb-4"><span class="font-bold text-xl">Analysis using scenarios: </span>Based on the data gathered, I came up with a full scale scenario in which a typical user would use the chat app based on the goals they set to achieve. Hence, there were multiple scenarios:
+                        <ul class="list-disc list-inside">
                           <li>Onboarding scenario</li>
                           <li>Money transfer scenario</li>
                           <li>Bill payment scenario</li>
                           <li>Surfing through/Getting to know bot scenario</li>
                         </ul>
                       </li>
-                      <li class="pb-4"> <span class="font-weight-bold">Building the Bot's Persona:</span> Based on users persona and data gathered, we already knew what our target audience disliked about bankers and banking halls and what they would love to see more. Together with the stakeholders, we decided the bot would be:
-                        <ul>
+                      <li class="pb-4"> <span class="font-bold text-xl">Building the Bot's Persona:</span> Based on users persona and data gathered, we already knew what our target audience disliked about bankers and banking halls and what they would love to see more. Together with the stakeholders, we decided the bot would be:
+                        <ul class="list-disc list-inside">
                           <li>Friendly</li>
                           <li>Feel Human - but not too human!</li>
                           <li>Smart - but only about things relating to finance</li>
                           <li>Efficient</li>
                           <li>Trustworthy</li>
-            
+
                         </ul>
                       </li>
-                      <li class="pb-4"><span class="font-weight-bold">UX writing: </span> With the goal of having a friendly and effient bot in mind, the following strategies were employed to achieve these goals:
-                        <ul>
+                      <li class="pb-4"><span class="font-bold text-xl">UX writing: </span> With the goal of having a friendly and effient bot in mind, the following strategies were employed to achieve these goals:
+                        <ul class="list-disc list-inside">
                           <li>Friendly - semi-formal tone and voice and use of emojis whenever appropriate.</li>
                           <li>Make it feel human - There were many ways this was achieved. An example is the 'Kudi is typing' feature that slows replies for a milisecond to not appear too programmed.</li>
                           <li>Smart - Answers all questions the user might have concerning it's transactions and if it does not have one, it should refer/redirect the user to a 'human'</li>
@@ -127,24 +132,28 @@
                           <li>Trustworthy - give immediate feedback and answers questions about security!</li>
                         </ul>
                       </li>
-                      <li><span class="font-weight-bold">Guerilla testing: </span>Because of the small size of the team, it was flexible enough to conduct guerilla testing almost at every stage of conception with our target audience to check if our assumptions and solutions were still right.</li>
+                      <li><span class="font-bold text-xl">Guerilla testing: </span>Because of the small size of the team, it was flexible enough to conduct guerilla testing almost at every stage of conception with our target audience to check if our assumptions and solutions were still right.</li>
                     </ol>
-            
-                  <h3 class="text-center font-weight-bold pt-3 pb-3">Outcomes and lessons </h3>
-                  <p> A major insight gained during one of our testing is the realisation that users were hesitant to add their card or account details at the beginning of their interaction with the bot. We had assumed that that should be the way the onboarding process should be, but this only resulted in drop-off. Users wanted to get to know the bot before they could commit. So we iterated to allow users to have as much small talk with the bot as they want and they onld added their card or account details when they were ready to perform a transaction.</p>
-                  <p>Kudi bot is still being used by thousands of people daily to perform transactions. The bot was deployed on many messaging apps such as <b class="text-secondary">Telegram, Facebook, Skype, Slack,</b> it also has a dedicated app of its own.</p>    
+
+                    <div class="mx-auto mb-4" style="width: 50%; height: 50%;">
+                        <img src="images/kudi-sample.png" alt="screenshot sample">
+                      </div>
+
+                  <h3 class="font-bold text-4xl text-center pt-12">Outcomes and lessons </h3>
+                  <p class="py-4"> A major insight gained during one of our testing is the realisation that users were hesitant to add their card or account details at the beginning of their interaction with the bot. We had assumed that that should be the way the onboarding process should be, but this only resulted in drop-off. Users wanted to get to know the bot before they could commit. So we iterated to allow users to have as much small talk with the bot as they want and they onld added their card or account details when they were ready to perform a transaction.</p>
+                  <p class="pb-12">Kudi bot is still being used by thousands of people daily to perform transactions. The bot was deployed on many messaging apps such as <b class="text-secondary">Telegram, Facebook, Skype, Slack,</b> it also has a dedicated app of its own.</p>
               </div>
         </section>
-      
-      
+
+
     </main>
   </div>
 
   <a href="pmc.html" class="text-white">
-      <section class="blue-bg text-center">
+      <section class="bg-gray-700 text-center p-6">
           <div class="container p-5">
-            <p class="h3 text-white">Next Project</p>
-            <a href="pmc.html" class="text-white"> Digitalizing Siegwerk PMC processes</a>
+            <p class="text-2xl text-white">Next Project</p>
+            <p class="text-white"> Digitalizing Siegwerk PMC processes</p>
           </div>
         </section>
   </a>

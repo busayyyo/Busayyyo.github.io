@@ -5,90 +5,71 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Busayo Oyewole - portfolio site</title>
-  <link rel="stylesheet" type="text/css" href="main.css?v1">
+  <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="blue-sec">
-  <div class="">
-    <nav class="navbar navbar-expand-lg navbar-light nav-color navbar-fixed-top">
-      <div class="container">
-        <a class="navbar-brand nav-link brand-color pl-4" href="index.html">Busayo Oyewole</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<body class="bg-yellow-50 antialiased">
+  <!-- navigation -->
+  <nav class="py-4 sm:text-lg">
+    <div class="px-2 sm:px-0 container mx-auto flex flex-row flex-wrap items-center text-gray-700">
+        <a href="" class="mr-auto">
+            Busayo Oyewole
+        </a>
+        <button
+            class="sm:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-700"
+            aria-expanded="false" onclick="openNav()">
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
         </button>
-  
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav pl-3 pr-2">
-            <li class="nav-item pl-3 pr-2">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-            <li class="nav-item pl-3 pr-2">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item pl-3 mr-3">
-              <a class="nav-link" href="https://medium.com/@busayomi" target="_blank">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a href="Busayo_Oyewole_CV.pdf" target="_blank" download="Busayo_Oyewole_CV.pdf">
-                    <button class="btn cta-btn text-white">Download CV</button>
-                </a>
-            </li>
-          </ul>
-        </div>
 
-      </div>
-    
-    </nav>
-  </div>
-
- 
-
-    <main class="pb-5">
-      <section class=" text-dark  hero">
-        <div class="container flexdir">
-          <div class="p-3 mt-5 col-md-6 col-sm-12">
-            <h1>Product designer <br> <span class="brand-color">Busayo Oyewole</span></h1> 
-          
-          <p class="text-14 mt-4 mb-4">A product designer with about <b>4 years experience </b>across diverse industries,
-            designing and creating intuitive interactive products</p>
-            <button class="btn cta-btn text-white">
-              <a href="projects.html" class="text-white text-decoration-none project-link">View Projects</a>
-            </button>
-          </div>
-          <div class="col-md-7 col-sm-12 pro-container mt-4">
-            <img src="images/prof-img.jpg" alt="profile image" class="profile-img">
-          </div>
-        </div>
-      </section>
-    
-
-      <section class="blue-sec pt-5 pb-5">
-        <div class="container flexdir">
-          <p class="col-md-6 col-sm-12 font-weight-bold h4 mb-5">Human centered designer, <br> Writer, <br> Javascript Curious </p> 
-          <div class="col-md-6 col-sm-12">
-            <div>
-              <p>
-                Hi there, my name is Busayo and I’m a UX and usability engineer at <a href="https://www.instaff.jobs/" target="_blank" class="brand-color">Instaff Jobs GmbH</a>. I have a BSc in Pschology and an MSc in Usability engineering.
-              </p>
-              <p>
-                I design experiences, services and products with a balance of business orientation and human centered design approach.
-              </p>
-              <p>
-                I enjoy solving problems and writing. In my free time, I serve as the managing editor at millennial poets.
-              </p>
-            </div>
-            <a href="Busayo_Oyewole_CV.pdf" target="_blank" download="Busayo_Oyewole_CV.pdf">
-                <button class="btn cta-btn text-white btn-center">Download CV</button>
+        <div
+            class="bg-white sm:bg-transparent hidden px-6 w-full sm:w-auto py-4 sm:mt-0 sm:block flex flex-col flex-grow sm:flex-grow-0 sm:flex-row menu-bg text-center rounded shadow-sm sm:shadow-none sm:bg-transparent"
+            id="navlinks">
+            <!-- <a href="/market" class="sm:mr-4 py-2 text-base sm:text-lg block sm:inline border-b sm:border-none">Market</a> -->
+            <a href="projects.html"
+               class="sm:mr-4 py-2 block sm:inline border-b sm:border-none">
+                Featured work
             </a>
-          </div>
+            <a href="about.html" class="sm:mr-4 py-2 block sm:inline border-b sm:border-none">
+                About
+            </a>
+            <a href="contact.html"
+               class="sm:mr-4 py-2 block sm:inline border-b sm:border-none">
+                Contact
+            </a>
+            <a href="Busayo_Oyewole_CV.pdf" target="_blank" download="Busayo_Oyewole_CV.pdf" class="block sm:inline mt-2 sm:mt-0">
+                <button class="btn bg-gray-700 hover:bg-yellow-600 rounded px-8 py-3 text-white">Download CV</button>
+            </a>
         </div>
-        
-      </section>
+    </div>
+</nav>
+
+  <main class="text-gray-700 max-w-5xl mx-auto flex flex-col items-center justify-center mt-12 sm:mt-16">
+    <div class="h-44 w-44 rounded-full bg-profile"></div>
+      <p class="text-2xl mt-3">Busayo Oyewole </p>
+      <h2 class="mb-6 mt-1">Product designer</h2>
+      <div class="bg-white rounded-lg shadow-sm pt-8 max-w-3xl">
+        <div class="px-4 sm:px-8 sm:text-lg">
+          <p class="font-bold pb-6">Good design is thorough down to the last detail - Dieter Rams.</p>
+          <p class="pb-6 text-gray-700">This is a design philosophy that I live by - to ask a lot of whys and listen. To gain clarity first, before coming up with solutions. To not leave anything to chance, but design with intention, and iterate repeatedly till it feels like air.</p>
+        </div>
+        <div class="bg-gray-200 px-6 py-3 rounded-b-lg  text-center">
+          <span class="mr-2">Bsc. Psychology</span> | <span>Msc. Usability Engineering</span>
+        </div>
+      </div>
+
+  </main>
+
+
       <!-- <hr> -->
-   
+
   <!-- <footer class="footer card-body nav-color bg-dark">
     <div class="card-container">
       <div class="row">
@@ -98,10 +79,16 @@
       </div>
     </div>
   </footer> -->
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+      function openNav() {
+          var x = document.getElementById("navlinks");
+          if (x.style.display === "block") {
+              x.style.display = "none";
+          } else {
+              x.style.display = "block";
+          }
+      }
+  </script>
 </body>
 
 </html>

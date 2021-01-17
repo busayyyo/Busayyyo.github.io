@@ -7,64 +7,80 @@
   <title>Busayo Oyewole - portfolio site</title>
   <link rel="stylesheet" type="text/css" href="main.css?v1">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
-  <div class="card-container bg-dark">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand nav-link brand-color pl-4" href="index.html">Busayo Oyewole</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<body class="bg-yellow-50 antialiased text-gray-700">
+  <nav class="py-4 sm:text-lg">
+    <div class="px-2 sm:px-0 container mx-auto flex flex-row flex-wrap items-center text-gray-700">
+        <a href="index.html" class="mr-auto">
+            Busayo Oyewole
+        </a>
+        <button
+            class="sm:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-700"
+            aria-expanded="false" onclick="openNav()">
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav pr-3">
-          <li class="nav-item">
-            <a class="nav-link brand-color" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link brand-color" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link brand-color" href="https://medium.com/@busayomi" target="_blank">Blog</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <div class="container pb-5">
-    <main class="card-container content p-4">
-      <div class="row">
-        <img src="images/profile-pic.jpg" class="col-md-4 col-sm-12" alt="">
-        <div class="col-md-8 col-sm-12 text-dark">
-          <p>Hi there, my name is Busayo and I’m a UX and usability engineer at <a href="https://www.siegwerk.com/en/home.html" target="_blank">Siegwerk AG</a>. I have a bachelors degree in psychology and I’m currently rounding up my masters in usability engineering.</p>
-          <p> I design experiences, services and products with a balance of business orientation and human centered design approach.
-             I also write frontend code and I enjoy bringing interface design to life.</p>
-             <p>I enjoy solving problems and writing - both words and code. In my free time, I serve as the managing editor at millennial poets.</p>
-             <a href="Busayo_Oyewole_CV.pdf" download="Busayo OYEWOLE - CV.pdf"><button type="button" class="btn btn-info">Download CV</button></a>
+        <div
+            class="bg-white sm:bg-transparent hidden px-6 w-full sm:w-auto py-4 sm:mt-0 sm:block flex flex-col flex-grow sm:flex-grow-0 sm:flex-row menu-bg text-center rounded shadow-sm sm:shadow-none sm:bg-transparent"
+            id="navlinks">
+            <!-- <a href="/market" class="sm:mr-4 py-2 text-base sm:text-lg block sm:inline border-b sm:border-none">Market</a> -->
+            <a href="projects.html"
+               class="sm:mr-4 py-2 block sm:inline border-b sm:border-none">
+                Featured work
+            </a>
+            <a href="about.html" class="sm:mr-4 py-2 block sm:inline border-b sm:border-none">
+              <span class="text-yellow-600 font-bold">  About </span>
+            </a>
+            <a href="contact.html"
+               class="sm:mr-4 py-2 block sm:inline border-b sm:border-none">
+                Contact
+            </a>
+            <a href="Busayo_Oyewole_CV.pdf" target="_blank" download="Busayo_Oyewole_CV.pdf" class="block sm:inline mt-2 sm:mt-0">
+                <button class="btn bg-gray-700 hover:bg-yellow-600 rounded px-8 py-3 text-white">Download CV</button>
+            </a>
         </div>
+    </div>
+  </nav>
+    <main class="card-container content px-12 py-6">
+      <img src="images/profile-pic.jpg" alt="profile image" class="">
+        <p class="my-6 sm:text-lg">I am a product designer with backgrounds in psychology and usability engineering. I've had experience designing interactive products such as a  B2C fintech AI solution and a B2B e-commerce service.</p>
+        <p class="my-3 sm:text-lg">I currently work at Instaff, a startup with the mission to provide short term staffing to companies in Germany. I enjoy working in an interdisciplinary product setting</p>
 
-      </div>
 
-
+        <h2 class="text-2xl mt-12">Some side, but important projects</h2>
+        <ul class="my-3 sm:text-lg">
+          <li class="p-2"><span class="font-bold">[Podcast]</span><a href="Making Accessibility the Default" class="ml-2"><span class="text-yellow-600">The ONE question podcast</span></a> - Lighthearted and fun, I ask some impressive people just one question</li>
+          <li class="p-2"><span class="font-bold">[Udemy course]</span><a href="Udemy course" class="ml-2"><span class="text-yellow-600">A beginner's guide to figma </span></a> - In this Udemy course, I teach people new to UI design about how to bring their ideas to life using Figma </li>
+          <li class="p-2"><span class="font-bold">[Poetry publication]</span><a href="How to efficiently use Figma community resources" class="ml-2"><span class="text-yellow-600"> Millennialpoets</span></a> - I founded this publication and curate poetry from Millenials around the world</li>
+        </ul>
+        <h2 class="text-2xl mt-12">Some design related articles</h2>
+        <ul class="my-3 sm:text-lg">
+          <li class="p-2"><span class="font-bold">[Article]</span><a href="Making Accessibility the Default" class="ml-2"><span class="text-yellow-600">Making Accessibility the Default</span></a></li>
+          <li class="p-2"><span class="font-bold">[Article]</span><a href="How visually impaired people navigate the web" class="ml-2"><span class="text-yellow-600">How visually impaired people navigate the web</span></a></li>
+          <li class="p-2"><span class="font-bold">[Article]</span><a href="How to efficiently use Figma community resources" class="ml-2"><span class="text-yellow-600">How to efficiently use Figma community resources</span></a></li>
+          <li class="p-2"><span class="font-bold">[Article]</span><a href="How to efficiently use Figma community resources" class="ml-2"><span class="text-yellow-600">How to navigate your entry-level UX job</span></a></li>
+          <li class="p-2"><span class="font-bold">[Article]</span><a href="How to efficiently use Figma community resources" class="ml-2"><span class="text-yellow-600">Why you should write semantic HTML</span></a></li>
+        </ul>
 
     </main>
-    <div class="push"></div>
-  </div>
-  <footer class="bg-dark footer card-body">
-    <div class="card-container">
-      <div class="row">
-        <p class="small col-md-4 col-sm-12"><a href="https://www.linkedin.com/in/busayomi/" class="text-white" target="_blank">Linkedin</a></p>
-        <p class="small col-md-4 col-sm-12 text-white text-center">Copyright Busayo Oyewole 2019</p>
-        <p class="small col-md-4 col-sm-12 text-right"> <a href="https://codepen.io/Busayyyo" class="text-white" target="_blank">Codepen</a></p>
-      </div>
-    </div>
-  </footer>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        function openNav() {
+            var x = document.getElementById("navlinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>
