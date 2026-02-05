@@ -5,22 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Busayo Oyewole - portfolio site</title>
-  <link rel="stylesheet" type="text/css" href="main.css?v1">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css?v1">
 </head>
 
-<body class="bg-yellow-50 antialiased">
+<body class="bg-gray-950 antialiased" style="font-family: 'Public Sans', sans-serif;">
   <!-- navigation -->
-  <nav class="py-4 sm:text-lg">
-    <div class="px-2 lg:px-0 container mx-auto flex flex-row flex-wrap items-center text-gray-700">
-        <a href="index.html" class="mr-auto">
-            Busayo Oyewole
+  <nav class="py-4 text-sm">
+    <div class="px-4 sm:px-8 xl:px-0 container mx-auto flex flex-row flex-wrap items-center justify-center text-gray-300">
+        <a href="index.html" class="mr-auto text-white hover:underline transition-colors duration-200" aria-label="Home">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
         </a>
         <button
-            class="sm:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-700"
+            class="sm:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300"
             aria-expanded="false" onclick="openNav()">
             <span class="sr-only">Open main menu</span>
             <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -30,53 +32,215 @@
         </button>
 
         <div
-            class="bg-white sm:bg-transparent hidden px-6 w-full sm:w-auto py-4 sm:mt-0 sm:block flex flex-col flex-grow sm:flex-grow-0 sm:flex-row menu-bg text-center rounded shadow-sm sm:shadow-none sm:bg-transparent"
+            class="bg-gray-800 sm:bg-transparent text-sm hidden m-0.5 px-6 w-full sm:w-auto py-4 sm:mt-0 sm:block flex flex-col sm:flex-row menu-bg text-left sm:text-center rounded shadow-sm sm:shadow-none"
             id="navlinks">
             <!-- <a href="/market" class="sm:mr-4 py-2 text-base sm:text-lg block sm:inline border-b sm:border-none">Market</a> -->
-            <a href="projects.html"
-               class="sm:mr-4 py-2 block sm:inline text-yellow-600 font-bold">
-                <span class="text-yellow-600">Featured work</span>
-            </a>
-            <a href="articles.html" class="sm:mr-4 py-2 block sm:inline">
-                Articles
-            </a>
-            <a href="contact.html"
-               class="sm:mr-4 py-2 block sm:inline">
-                Contact
-            </a>
-            <a href="Busayo_Oyewole_CV.pdf" target="_blank" download="Busayo_Oyewole_CV.pdf" class="block sm:inline mt-2 sm:mt-0">
-                <button class="btn bg-gray-700 hover:bg-yellow-600 rounded px-8 py-3 text-white">Download CV</button>
+            <a href="projects.html" class="sm:mr-4 py-2 block sm:inline" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                Featured work
+          
+               </a>
+            <a href="about.html"
+               class="sm:mr-4 py-2 block sm:inline" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                About
+            <a href="Busayo_Oyewole__CV.pdf" target="_blank" download="Busayo_Oyewole__CV.pdf" class="block sm:inline mt-2 sm:mt-0">
+                <button class="bg-white text-gray-900 rounded-lg text-sm font-semibold hover:scale-105 px-6 py-2 transition duration-200" style="font-family: 'Bricolage Grotesque', sans-serif;">Download CV</button>
             </a>
         </div>
     </div>
   </nav>
 
-  <main class="container mx-auto pb-6 text-gray-700">
+  <main class="container mx-auto px-4 sm:px-8 xl:px-0 pb-6 text-gray-300">
+    <h2>10 Featured projects</h2>
 
-    <section class="pt-5 mt-4 max-w-5xl mx-auto">
-      <ul class="my-3 sm:text-lg flex flex-wrap justify-center">
+    <section class="pt-5 mt-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+
+    
+      <a href="ratings-ai-summary.html">
+        <div class="flex p-4 space-x-4 rounded-2xl shadow-2xl bg-gray-black border border-gray-800 hover:scale-105 transition duration-200 cursor-pointer">
+          <div class="flex-shrink-0">
+            <img src="images/rating.png" alt="" class="w-24 h-20 rounded-xl mb-4">
+            <span class="text-xs rounded-full text-gray-400 bg-gray-800 px-2 py-1 border border-gray-600 mr-1">Feature</span>
+          </div>
+          <div>
+            <h3 class="text-2xl mb-2 font-bold tracking-tight leading-tight">Ratings AI summary</h3>
+            <p class="text-sm text-gray-400">Summarising dealer ratings on a car marketplace, using AI</p>
+          </div>
+      </div>
+    </a>
+
+    <a href="safety-centre.html">
+      <div class="flex p-4 space-x-4 rounded-2xl bg-gray-black border border-gray-800 shadow-2xl hover:scale-105 transition duration-200 cursor-pointer">
+        <div class="flex-shrink-0">
+          <img src="images/safety.png" alt="" class="w-24 h-20 rounded-xl mb-4 bg-cover flex-shrink-0">
+          <span class="text-xs rounded-full text-gray-400 bg-gray-800 px-2 py-1 border border-gray-600 mr-1">Project</span>
+        </div>
+        <div>
+          <h3 class="text-2xl mb-2 font-bold tracking-tight leading-tight">Safety centre</h3>
+          <p class="text-sm text-gray-400">Safety education and information centre on a marketplace.</p>
+        </div>
+      </div>
+    </a>
+
+      <a href="pii-data-warning.html">
+        <div class="flex p-4 space-x-4 rounded-2xl bg-gray-black border border-gray-800 shadow-2xl hover:scale-105 transition duration-200 cursor-pointer">
+          <div class="flex-shrink-0">
+            <img src="images/warning.png" alt="" class="w-24 h-20 rounded-xl mb-4 bg-cover flex-shrink-0">
+            <span class="text-xs rounded-full text-gray-400 bg-gray-800 px-2 py-1 border border-gray-600 mr-1">Feature</span>
+            <!-- <span class="text-xs rounded-full text-gray-300 bg-gray-700 px-2 py-1 border border-gray-600 mr-1">Safety</span> -->
+          </div>
+          <div>
+            <h3 class="text-2xl mb-2 font-bold tracking-tight leading-tight">PII warning</h3>
+            <p class="text-sm text-gray-400">Contextual safety education and protection of users in messaging.</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="trust-corner.html">
+        <div class="flex p-4 space-x-4 rounded-2xl bg-gray-black border border-gray-800 shadow-2xl hover:scale-105 transition duration-200 cursor-pointer">
+          <div class="flex-shrink-0">
+            <img src="images/trust.png" alt="" class="w-24 h-20 rounded-xl mb-4 bg-cover flex-shrink-0">
+            <span class="text-xs rounded-full text-gray-400 bg-gray-800 px-2 py-1 border border-gray-600 mr-1">Feature</span>
+          </div>
+          <div>
+            <h3 class="text-2xl mb-2 font-bold tracking-tight leading-tight">Trust box</h3>
+            <p class="text-sm text-gray-400">Factual information about dealers that consumers can trust.</p>
+          </div>
+        </div>
+      </a>
+
+
+
+      <!-- <a href="trusted-buyer-profile.html">
+        <div class="flex p-4 space-x-4 rounded-xl bg-gray-black border border-gray-700 shadow-xl hover:scale-125 cursor-pointer">
+          <div class="flex-shrink-0">
+            <img src="images/vendsc.jpg" alt="" class="w-24 h-24 rounded-lg mb-4">
+            <span class="text-xs rounded-full text-gray-300 bg-gray-700 px-2 py-1 border border-gray-600 mr-1">Discovery</span>
+          </div>
+          <div>
+            <h3 class="text-2xl mb-2 font-bold tracking-tight leading-tight">Trusted buyer profile</h3>
+            <p class="text-sm">Exploring what makes a profile trustworthy in a marketplace</p>
+          </div>
+        </div>
+      </a> -->
+
+      <a href="user-reporting.html">
+        <div class="flex p-4 space-x-4 rounded-2xl bg-gray-black border border-gray-800 shadow-2xl hover:scale-105 transition duration-200 cursor-pointer">
+          <div class="flex-shrink-0">
+            <img src="images/report.png" alt="" class="w-24 h-20 rounded-xl mb-4">
+            <span class="text-xs rounded-full text-gray-400 bg-gray-800 px-2 py-1 border border-gray-600 mr-1">Feature</span>
+          </div>
+          <div>
+            <h3 class="text-2xl mb-2 font-bold tracking-tight leading-tight">User reporting</h3>
+            <p class="text-sm text-gray-400">A channel to report bad actors on a marketplace</p>
+          </div>
+        </div>
+      </a>
+
+
+
+
+    <a href="sellers-name-options.html">
+      <div class="flex p-4 space-x-4 rounded-2xl bg-gray-black border border-gray-800 shadow-2xl hover:scale-105 transition duration-200 cursor-pointer">
+        <div class="flex-shrink-0">
+          <img src="images/user.png" alt="" class="w-24 h-20 rounded-xl mb-4 bg-cover flex-shrink-0">
+          <span class="text-xs rounded-full text-gray-400 bg-gray-800 px-2 py-1 border border-gray-600 mr-1">Feature</span>
+        </div>
+        <div>
+          <h3 class="text-2xl mb-2 font-bold tracking-tight leading-tight">Name display</h3>
+          <p class="text-sm text-gray-400">Discouraging anonymity in a marketplace to increase trust</p>
+        </div>
+    </div>
+  </a>
+
+  <!-- <a href="killer-shell.html">
+    <div class="flex p-4 space-x-4 rounded-xl bg-gray-black border border-gray-700 shadow-xl hover:scale-125 cursor-pointer">
+      <div class="flex-shrink-0">
+        <img src="images/rating.png" alt="" class="w-24 h-20 rounded-lg mb-4 bg-cover">
+        <span class="text-xs rounded-full text-gray-300 bg-gray-700 px-2 py-1 border border-gray-600 mr-1">Redesign</span>
+      </div>
+      <div>
+        <h3 class="text-2xl mb-2 font-bold tracking-tight leading-tight">Overall ratings score</h3>
+        <p class="text-sm">Increasing trust in ratings</p>
+      </div>
+  </div>
+</a> -->
+
+
+    <a href="vendors.html">
+      <div class="flex p-4 space-x-4 rounded-2xl bg-gray-black border border-gray-800 shadow-2xl hover:scale-105 transition duration-200 cursor-pointer">
+        <div class="flex-shrink-0">
+          <img src="images/logo-vendroad.png" alt="" class="w-20 h-20 rounded-xl mb-4">
+          <span class="text-xs rounded-full text-gray-400 bg-gray-800 px-2 py-1 border border-gray-600 mr-1">Product</span>
+        </div>
+        <div>
+          <h3 class="text-2xl mb-2 font-bold tracking-tight leading-tight">Vendroad</h3>
+          <p class="text-sm text-gray-400">E-commerce website builder for small businesses</p>
+        </div>
+    </div>
+
+    <a href="wishgum.html">
+      <div class="flex p-4 space-x-4 rounded-2xl bg-gray-black border border-gray-800 shadow-2xl hover:scale-105 transition duration-200 cursor-pointer">
+        <div class="flex-shrink-0">
+          <img src="images/wishgum-logo-square.svg" alt="" class="w-24 h-20 rounded-xl mb-4">
+          <span class="text-xs rounded-full text-gray-400 bg-gray-800 px-2 py-1 border border-gray-600 mr-1">Product</span>
+        </div>
+        <div>
+          <h3 class="text-2xl mb-2 font-bold tracking-tight leading-tight">Wishgum</h3>
+          <p class="text-sm text-gray-400">Gift registry maker for weddings, birthdays etc.</p>
+        </div>
+    </div>
+  </a>
+  <a href="killer-shell.html">
+    <div class="flex p-4 space-x-4 rounded-2xl bg-gray-black border border-gray-800 shadow-2xl hover:scale-105 transition duration-200 cursor-pointer">
+      <div class="flex-shrink-0">
+        <img src="images/killersh.png" alt="" class="w-20 h-20 rounded-xl mb-4">
+        <span class="text-xs rounded-full text-gray-400 bg-gray-800 px-2 py-1 border border-gray-600 mr-1">Product</span>
+      </div>
+      <div>
+        <h3 class="text-2xl mb-2 font-bold tracking-tight leading-tight">Killer Shell</h3>
+        <p class="text-sm text-gray-400">Exam simulator for kubernetes engineers taking the CKAD exam</p>
+      </div>
+  </div>
+</a>
+
+  <a href="kudibot.html">
+    <div class="flex p-4 space-x-4 rounded-2xl bg-gray-black border border-gray-800 shadow-2xl hover:scale-105 transition duration-200 cursor-pointer">
+      <div class="flex-shrink-0">
+        <img src="images/kudi.png" alt="" class="w-20 h-20 rounded-xl mb-4">
+        <span class="text-xs rounded-full text-gray-400 bg-gray-800 px-2 py-1 border border-gray-600 mr-1">Product</span>
+      </div>
+      <div>
+        <h3 class="text-2xl mb-2 font-bold tracking-tight leading-tight">Kudi AI</h3>
+        <p class="text-sm text-gray-400">Fintech chatbot for bank transfers and bill payments in Nigeria</p>
+      </div>
+  </div>
+
+      
+      
+
+      <!-- <ul class="my-3 sm:text-lg flex flex-wrap justify-center">
         <li class="p-2 w-80"><span class="font-bold"></span><a href="vendors.html" class="ml-2"><img src="images/vendsc.jpg" class="w-80 h-80 object-cover">
           <span class="text-yellow-600 block py-2">Vendors.so </span></a>
           <div class="text-xs flex flex-wrap mb-4">
-            <span class="bg-gray-200 rounded-full px-4 py-1.5 mr-2 mt-2">#B2B</span>
-            <span class="bg-gray-200 rounded-full px-4 py-1.5 mr-2 mt-2">#B2C</span>
-            <span class="bg-gray-200 rounded-full px-4 py-1.5 mr-2 mt-2">#Ecommerce</span>
+            <span class="bg-gray-700 text-gray-300 rounded-full px-4 py-1.5 mr-2 mt-2">#B2B</span>
+            <span class="bg-gray-700 text-gray-300 rounded-full px-4 py-1.5 mr-2 mt-2">#B2C</span>
+            <span class="bg-gray-700 text-gray-300 rounded-full px-4 py-1.5 mr-2 mt-2">#Ecommerce</span>
           </div>
           <p class="text-sm">Designing a nocode e-commerce platform for independent sellers and small businesses in Nigeria to set up shops and get orders online.</p> </li>
         <li class="p-2 w-80"><span class="font-bold"></span><a href="killer-shell.html" class="ml-2"><img src="images/killersc.jpg" class="w-80 h-80 object-cover"><span class="text-yellow-600 block py-2">Killer shell</span></a>
           <div class="text-xs flex flex-wrap mb-4">
-            <span class="bg-gray-200 rounded-full px-4 py-1.5 mr-2 mt-2">#B2C</span>
-            <span class="bg-gray-200 rounded-full px-4 py-1.5 mr-2 mt-2">#Programming</span>
-            <span class="bg-gray-200 rounded-full px-4 py-1.5 mr-2 mt-2">#UX</span>
+            <span class="bg-gray-700 text-gray-300 rounded-full px-4 py-1.5 mr-2 mt-2">#B2C</span>
+            <span class="bg-gray-700 text-gray-300 rounded-full px-4 py-1.5 mr-2 mt-2">#Programming</span>
+            <span class="bg-gray-700 text-gray-300 rounded-full px-4 py-1.5 mr-2 mt-2">#UX</span>
           </div>
           <p class="text-sm">Designing a CKAD exam simulator for Kubernetes programmers, who wants to take mock exams before the real deal.</p></li>
         <li class="p-2 w-80"><span class="font-bold"></span><a href="kudibot.html" class="ml-2"><img src="images/chatb.png" class="w-80 h-80 object-cover"><span class="text-yellow-600 block py-2">Kudi bot</span></a>
           <div class="text-xs flex flex-wrap mb-4">
-            <span class="bg-gray-200 rounded-full px-4 py-1.5 mr-2 mt-2">#Chatbot</span>
-            <span class="bg-gray-200 rounded-full px-4 py-1.5 mr-2 mt-2">#Interaction design</span>
+            <span class="bg-gray-700 text-gray-300 rounded-full px-4 py-1.5 mr-2 mt-2">#Chatbot</span>
+            <span class="bg-gray-700 text-gray-300 rounded-full px-4 py-1.5 mr-2 mt-2">#Interaction design</span>
           </div>
            <p class="text-sm">Designing an AI powered conversational agent for financial services.</p></li>
-      </ul>
+      </ul> -->
 
     </section>
   </main>
@@ -91,6 +255,7 @@
               x.style.display = "block";
           }
       }
+
   </script>
 </body>
 </html>

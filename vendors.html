@@ -4,20 +4,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Busayo Oyewole - portfolio site</title>
+  <title>Vendroad - Busayo Oyewole</title>
   <link rel="stylesheet" type="text/css" href="main.css?v1">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-yellow-50 antialiased text-gray-700">
+<body class="bg-gray-950 antialiased text-gray-200 relative">
   <!-- navigation -->
-  <nav class="py-4 sm:text-lg">
+  <nav class="py-4 sm:text-lg" style="font-family: 'Bricolage Grotesque', sans-serif;">
     <div class="px-2 lg:px-0 container mx-auto flex flex-row flex-wrap items-center text-gray-700">
         <a href="index.html" class="mr-auto">
-            Busayo Oyewole
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
         </a>
         <button
             class="sm:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-700"
@@ -30,132 +32,224 @@
         </button>
 
         <div
-            class="bg-white sm:bg-transparent hidden px-6 w-full sm:w-auto py-4 sm:mt-0 sm:block flex flex-col flex-grow sm:flex-grow-0 sm:flex-row menu-bg text-center rounded shadow-sm sm:shadow-none sm:bg-transparent"
+            class="bg-gray-800 sm:bg-transparent text-sm hidden m-0.5 px-6 w-full sm:w-auto py-4 sm:mt-0 sm:block flex flex-col sm:flex-row menu-bg text-left sm:text-center rounded shadow-sm sm:shadow-none"
             id="navlinks">
-            <!-- <a href="/market" class="sm:mr-4 py-2 text-base sm:text-lg block sm:inline border-b sm:border-none">Market</a> -->
-            <a href="projects.html"
-               class="sm:mr-4 py-2 block sm:inline">
+            <a href="projects.html" class="sm:mr-4 py-2 block sm:inline">
                 Featured work
-            </a>
-            <a href="articles.html" class="sm:mr-4 py-2 block sm:inline">
-                Articles
-            </a>
-            <a href="contact.html"
-               class="sm:mr-4 py-2 block sm:inline">
-                Contact
-            </a>
-            <a href="Busayo_Oyewole_CV.pdf" target="_blank" download="Busayo_Oyewole_CV.pdf" class="block sm:inline mt-2 sm:mt-0">
-                <button class="btn bg-gray-700 hover:bg-yellow-600 rounded px-8 py-3 text-white">Download CV</button>
-            </a>
+            <a href="about.html"
+            class="sm:mr-4 py-2 block sm:inline" style="font-family: 'Bricolage Grotesque', sans-serif;">
+             About
+         </a> 
+            <a href="Busayo_Oyewole__CV.pdf" target="_blank" download="Busayo_Oyewole__CV.pdf" class="block sm:inline mt-2 sm:mt-0">
+                <button class="bg-white text-gray-900 rounded-lg px-8 py-3 text-sm font-semibold">Download CV</button>
         </div>
     </div>
 </nav>
 
+<!-- Main Container with Side Navigation -->
+<div class="container mx-auto py-12 px-4 sm:px-8 xl:px-0">
+  <div class="flex flex-col lg:flex-row gap-8">
+    
+    <!-- Side Navigation -->
+    <div class="lg:w-64 lg:sticky lg:top-24 lg:self-start">
+      <nav class="mb-8">
+        <p class="container mx-auto text-xs flex text-gray-500">
+          <a href="projects.html" class="flex items-center mr-2">Featured</a> <span class="mr-2">/</span> <span class="font-bold">Vendroad</span>
+        </p>
+        <ul class="space-y-2 mt-5">
+          <li><a href="#intro" class="nav-link block py-2 rounded text-gray-400 hover:text-gray-200 transition-all duration-200" style="font-family: 'Bricolage Grotesque', sans-serif;">Introduction</a></li>
+          <li><a href="#process" class="nav-link block py-2 rounded text-gray-400 hover:text-gray-200 transition-all duration-200" style="font-family: 'Bricolage Grotesque', sans-serif;">Key Features</a></li>
+          <li><a href="#outcome" class="nav-link block py-2 rounded text-gray-400 hover:text-gray-200 transition-all duration-200" style="font-family: 'Bricolage Grotesque', sans-serif;">Outcome</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    <section class="container mx-auto pb-2">
+    <!-- Main Content -->
+    <div class="flex-1 max-w-3xl text-lg leading-relaxed">
+  <section style="font-family: 'Bricolage Grotesque', sans-serif;" id="intro">
 
-        <a href="projects.html" class="flex items-center justify-center sm:justify-start ml-4"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 mr-2">
-  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
-</svg>Back to projects</a>
+    <div class="flex space-x-4 items-center"> <img src="images/logo-vendroad.png" class="w-12 rounded" alt="thumbnail">
+      <h1 class="text-5xl font-bold tracking-tight leading-tight text-white">Vendroad</h1></div>
+    <h2 class="mb-4 text-2xl">E-commerce website builder for small businesses</h2>
 
-      <h1 class="mt-8 text-center text-xl sm:text-4xl">Vendors.so </h1>
-      <h2 class="h6 text-center mt-3 mb-4">Designing an ecommerce platform for small businesses and independent sellers in Nigeria</h2>
+    <div class="mt-12 flex flex-col space-y-8 tracking-tight leading-tight">
+      <div class="w-full flex items-center space-x-4">
+        <p>Year</p>
+        <hr class="w-full h-px bg-gray-800 border-0">
+        <p class="flex-shrink-0">2021</p>
+      </div>
+      <div class="w-full flex items-center space-x-4">
+        <p>Role</p>
+        <hr class="w-full h-px bg-gray-800 border-0">
+        <p class="flex-shrink-0">Product Designer</p>
+      </div>
+      <div class="w-full flex items-center space-x-4">
+        <p>Platform</p>
+        <hr class="w-full h-px bg-gray-800 border-0">
+        <p class="flex-shrink-0">Web</p>
+      </div>
+      <div class="w-full flex items-center space-x-4">
+        <p>Team</p>
+        <hr class="w-full h-px bg-gray-800 border-0">
+        <p class="flex-shrink-0">Founders, engineers, designer</p>
+      </div>
+    </div>
 
-    </section>
 
-<section class="mt-4">
-  <div class="container mx-auto mb-4" style="width: 70%; height: 70%;">
-    <img src="images/dsc.png" alt="" class="object-cover shadow-lg drop-shadow-lg rounded-xl lg:rounded-3xl">
-    <p class="text-center text-gray-600 text-sm mt-3">Screenshot, vendors dashboard</p>
+  <div class="my-12">
+    <h2 class="text-3xl font-bold tracking-tight mb-4" style="font-family: 'Bricolage Grotesque', sans-serif;">Work done</h2>
+    <p class="leading-relaxed text-gray-400">Led product design from conception to implementation, including user research with Nigerian small businesses, prototyping e-commerce solutions, and designing intuitive shop creation and order management tools.</p>
+  </div>
+
+  <div>
+    <h2 class="text-3xl font-bold tracking-tight mb-4" style="font-family: 'Bricolage Grotesque', sans-serif;">Context</h2>
+    <p class="leading-relaxed text-gray-400"><a href="https://www.vendroad.com" target="_blank" class="underline text-white">Vendroad</a> helps independent sellers create online shops, process orders, and handle payments. The challenge was designing a solution that could enable small businesses and independent sellers to easily create an online presence and manage their operations.
+
+      The goal was to create an accessible platform tailored specifically to entrepreneurs who often operate solo without dedicated staff for digital tools.
+    </p>
+  </div>
+
+  <div class="mx-auto mt-8 w-full">
+    <img src="images/VR-1.png" alt="Vendroad dashboard interface" class="rounded-lg"> 
+    <p class="text-gray-400 text-xs mt-2 text-center">Vendroad landing page</p>
   </div>
 </section>
 
-    <section class="card-container mx-auto text-gray-700 bg-white p-8 my-12 rounded">
-        <div class="card-container card-body">
-          <p class="font-bold pt-4">November 2020, Designer's log:</p>
-          <p class="pt-6 pb-3">  <a href="https://www.vendors.so" target="_blank" class="text-yellow-600">Vendors</a> is a new startup in Nigeria that helps independent sellers create an online shop, process orders and payment.
-            In this project, I helped with product thinking from conception to UX flows to implementation.
-           </p>
-          <p class="pt-3 pb-8">
-          The challenge is, how can small businesses and independent sellers easily create an online shop and manage their orders?
-            </p>
+<section class="flex flex-col space-y-12 mt-24" id="process">
+  <div>
+    <h2 class="text-3xl font-bold tracking-tight mb-4" style="font-family: 'Bricolage Grotesque', sans-serif;">Key Features</h2>
+<p class="leading-relaxed text-gray-400">Designed and iterated on key features integral to an easy set up of an online shop, and managing orders.</p>
+  </div>
 
-        </div>
-      </section>
+<div class="mx-auto mb-4 w-full">
+  <img src="images/VR-5.png" alt="Vendroad dashboard interface" class="rounded-lg w-1/2 mx-auto"> 
+  <p class="text-gray-400 text-xs mt-2 text-center">Adding products</p>
+</div>
 
-      <section class="container mx-auto px-6 lg:px-0">
-          <div class="card-container">
-              <h3 class="font-bold text-4xl mb-2 text-center pt-4">Process</h3>
-              <p class=""></p>
+  <div class="mx-auto mb-4 w-full">
+    <img src="images/VR-3.png" alt="Vendroad dashboard interface" class="rounded-lg"> 
+    <p class="text-gray-400 text-xs mt-2 text-center">Dashboard showing order management and analytics</p>
+  </div>
 
-              <ol type="I" class="pt-4 mb-12">
-                <li> <span class="font-bold text-xl">Discovery:</span>
 
-                    The first step in designing a solution tailored to Nigerian small businesses and independent sellers is to first understand how this targeted audience do business. What the painpoints are, what the delights are, and what the status quo is.
+  <div class="mx-auto mb-4 w-full">
+    <img src="images/VR-4.png" alt="Vendroad dashboard interface" class="rounded-lg"> 
+    <p class="text-gray-400 text-xs mt-2 text-center">Product management page</p>
+  </div>
 
-                    <li class="pt-4">
-                      Talking to business owners and analyzing these data helped in mapping market gaps, user needs and frustrations with business objectives.
-                      </li>
-                </li>
-                  <li class="pt-4"><span class="font-bold text-xl">Rapid prototyping: </span> Before one line of code was written, I used typeforms to simulate how an online shop could be for independent sellers and consumers. This helped us to garner feedback, correct faulty assumptions and understand the e-commerce expectations for sole entrepreneurs who are usually busy and do not have extra staff to attend to any digital tool.
+  <div class="mx-auto mb-4 w-full">
+    <img src="images/VR-6.png" alt="Vendroad dashboard interface" class="rounded-lg"> 
+    <p class="text-gray-400 text-xs mt-2 text-center">Design theme selection</p>
+  </div>
 
-                  </li>
+  <div class="mx-auto mb-4 w-full">
+    <img src="images/VR-2.png" alt="Vendroad dashboard interface" class="rounded-lg"> 
+    <p class="text-gray-400 text-xs mt-2 text-center">Theme editing and customising page</p>
+  </div>
 
-                  <li class="pt-4"><span class="font-bold text-xl">Sketching, design and prototyping:</span> Based on the data typeform has afforded us, I designed the information architecture of the platform. Questions such as how would a business owner upload the products, set price and other gritty details essential to a buyer. Once an order comes in, how would they be notified? How would the buyer checkout? What if there was an error in payment?
 
-                  </li>
-                    <li class="pt-4">Using Figma, I designed of what the product should look like, for both the sellers and their customers.</p>
-                  <li class="pt-4"><span class="font-bold text-xl">Testing, iteration, beta, feedback:</span> Like every designer worth her salt, I'd be the first to tell you we didn't get it right at first. But through relentless updates and feedback from customers, we've been able to design a no code tool that helps customers set up a shop in 5 minutes or less, start selling and receiving payment, all tailored to the Nigerian buying culture.
-                  </li>
-                </ol>
-              </div>
-            </section>
+  <div class="mx-auto mb-4 w-full">
+    <img src="images/VR-7.png" alt="Vendroad dashboard interface" class="rounded-lg"> 
+    <p class="text-gray-400 text-xs mt-2 text-center">More store customisation options. We removed these features out of the box because a store with 1 product probably doesn't need search.</p>
+  </div>
 
-            <section class="container mx-auto mb-4">
-              <div class="container mx-auto mb-4" style="width: 70%; height: 70%;">
-                <img src="images/shopsc.png" alt="screenshot of a vendors.so live shop" class="object-cover shadow-md rounded-xl lg:rounded-3xl shadow-lg drop-shadow-lg">
-                <p class="text-center text-gray-600 text-sm mt-3 mb-12">Screenshot of a vendors.so live shop</p>
-              </div>
-              <div class="container mx-auto mb-4" style="width: 70%; height: 70%;">
-                <img src="images/productsc.png" alt="Screenshot of products overview table" class="object-cover shadow-md rounded-xl lg:rounded-3xl  shadow-lg drop-shadow-lg">
-                <p class="text-center text-gray-600 text-sm mt-3 mb-12">Screenshot of the product overview table</p>
-              </div>
-              <div class="container mx-auto mb-4" style="width: 70%; height: 70%;">
-                <img src="images/orderssc.png" alt="Screenshot of orders overview table" class="object-cover shadow-md rounded-xl lg:rounded-3xl  shadow-lg drop-shadow-lg">
-                <p class="text-center text-gray-600 text-sm mt-3 mb-12">Screenshot of the orders overview table</p>
-              </div>
-            </section>
+  <div class="mx-auto mb-4 w-full">
+    <img src="images/VR-8.png" alt="Vendroad dashboard interface" class="rounded-lg"> 
+    <p class="text-gray-400 text-xs mt-2 text-center">Policy pages creation and management</p>
+  </div>
+  <div class="mx-auto mb-4 w-full">
+    <img src="images/VR-9.png" alt="Vendroad dashboard interface" class="rounded-lg"> 
+    <p class="text-gray-400 text-xs mt-2 text-center">Shipping management</p>
+  </div>
 
-                          <section class="container mx-auto my-16">
-                              <div class="card-container">
+  <div class="mx-auto mb-4 w-full">
+    <img src="images/VR-10.png" alt="Vendroad dashboard interface" class="rounded-lg"> 
+    <p class="text-gray-400 text-xs mt-2 text-center">Payment configuration</p>
+  </div>
 
-                              <h3 class="text-center font-bold text-4xl mb-2">Outcome</h3>
+  <div class="mx-auto mt-8 w-full">
+    <img src="images/VR-11.png" alt="Vendroad dashboard interface" class="rounded-lg"> 
+    <p class="text-gray-400 text-xs mt-2 text-center">Sample shop using vendroad</p>
+  </div>
 
-                            <ul class="mb-4">
-                                <li>Vendors.so is live now on <a href="https://www.vendors.so" target="_blank" class="text-yellow-600">www.vendors.so</a>, used daily by independent sellers and small businesses.</li>
-                            </ul>
-                          </div>
-                        </section>
+  <div class="mx-auto mb-4 w-full">
+    <img src="images/VR-12.png" alt="Vendroad dashboard interface" class="rounded-lg"> 
+    <p class="text-gray-400 text-xs mt-2 text-center">Checkout page</p>
+  </div>
 
-                    <a href="killer-shell.html" class="text-white block">
-                        <section class="bg-gray-700 text-center p-6">
-                            <div class="container p-5 mx-auto">
-                              <p class="text-2xl text-white">Next Project</p>
-                              <p class="text-white">Killer shell</p>
-                            </div>
-                          </section>
-                    </a>
+  <div id="outcome">
+    <h2 class="text-3xl font-bold tracking-tight mb-4" style="font-family: 'Bricolage Grotesque', sans-serif;">Outcome</h2>
+    <ul class="list-disc list-outside px-4 space-y-4 leading-relaxed text-gray-400">
+      <li>Vendroad successfully launched and is used daily by independent sellers and small businesses</li>
+      <li>Achieved the goal of 10-minute shop setup for entrepreneurs</li>
+      <li>Integrated payment processing tailored to small businesses</li>
+      <li>Provided accessible e-commerce solution for solo business operators</li>
+    </ul>
+  </div>
 
-        <script>
-            function openNav() {
-                var x = document.getElementById("navlinks");
-                if (x.style.display === "block") {
-                    x.style.display = "none";
-                } else {
-                    x.style.display = "block";
+</section>
+
+    </div> <!-- End Main Content -->
+  </div> <!-- End Flex Container -->
+</div> <!-- End Main Container -->
+
+<script>
+    function openNav() {
+        var x = document.getElementById("navlinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+
+    // Navigation highlighting on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function highlightNavigation() {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100; // Offset for sticky header
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
                 }
-            }
-        </script>
+            });
+
+            navLinks.forEach(link => {
+                // Remove all possible text colors and reset to default
+                link.classList.remove('text-white', 'text-gray-200', 'text-gray-300');
+                link.classList.add('text-gray-400');
+                
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.remove('text-gray-400');
+                    link.classList.add('text-white');
+                }
+            });
+        }
+
+        // Smooth scroll for navigation links
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        window.addEventListener('scroll', highlightNavigation);
+        highlightNavigation(); // Initial call
+    });
+</script>
 </body>
 
 </html>

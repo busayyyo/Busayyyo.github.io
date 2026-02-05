@@ -8,7 +8,31 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Public Sans', sans-serif !important;
+}
+
+/* Default body text uses Public Sans */
+body, p, div, span, a, li, td, th {
+  font-family: 'Public Sans', sans-serif !important;
+}
+
+/* Headers use Bricolage Grotesque */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bricolage Grotesque', sans-serif !important;
+}
+
+/* Navigation text should be white with Bricolage font */
+nav a {
+  color: white !important;
+  font-family: 'Bricolage Grotesque', sans-serif !important;
+}
+
+nav a:hover {
+  color: rgb(251, 191, 36) !important; /* yellow-400 */
+}
+
+nav button {
+  font-family: 'Bricolage Grotesque', sans-serif !important;
 }
 
 body {
@@ -16,13 +40,64 @@ body {
   color: #666;
 }
 
-a {
-  color: rgb(55, 65, 81) !important;
+/* Custom gray-950 for darker background since Tailwind v2 doesn't include it */
+.bg-gray-950 {
+  background-color: #0d1117 !important;
 }
 
-a:hover {
-  color: rgb(217, 119, 6) !important;
+/* Wave animation for the emoji */
+.wave-animation {
+  animation: wave 1.2s ease-in-out 0.2s 1;
+  transform-origin: 70% 70%;
+  display: inline-block;
 }
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Hover scale effects for project cards */
+.hover\:scale-125 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover\:scale-125:hover {
+  transform: scale(1.25);
+}
+
+.hover\:scale-105 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+/* Shadow utilities */
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Dark theme shadow adjustments */
+.bg-gray-950 .shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.bg-gray-950 .shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+
 
 img {
   height: 100%;

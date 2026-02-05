@@ -5,22 +5,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Busayo Oyewole - portfolio site</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
-<body class="bg-yellow-50 antialiased">
-  <!-- navigation -->
-  <nav class="py-4 sm:text-lg">
-    <div class="px-2 lg:px-0 container mx-auto flex flex-row flex-wrap items-center text-gray-700">
-        <a href="" class="mr-auto">
-            Busayo Oyewole
+<body class="bg-gray-950 antialiased h-screen" style="font-family: 'Public Sans', sans-serif;">
+
+  <!-- Navigation -->
+  <nav class="absolute top-0 w-full z-10 py-6">
+    <div class="container mx-auto flex items-center px-6 md:px-8 xl:px-0">
+        <!-- Left side - Home icon -->
+        <a href="index.html" class="mr-auto text-white hover:underline transition-colors duration-200" aria-label="Home">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              </svg>              
         </a>
+        
+        <!-- Desktop navigation -->
+        <div class="hidden md:flex space-x-6 text-sm items-center">
+            <a href="projects.html" class="text-white hover:underline transition-colors duration-200" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                Featured work
+            </a>
+            <a href="about.html" class="text-white hover:underline transition-colors duration-200" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                About
+            </a>
+            <a href="Busayo_Oyewole__CV.pdf" target="_blank" download="Busayo_Oyewole__CV.pdf">
+                <button class="bg-gray-900 text-gray-100 rounded-lg text-sm font-semibold hover:scale-105 px-6 py-2 transition duration-200" style="font-family: 'Bricolage Grotesque', sans-serif;">Download CV</button>
+            </a>
+        </div>
+        
+        <!-- Mobile menu button -->
         <button
-            class="sm:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-700"
+            class="md:hidden inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-300 text-white"
             aria-expanded="false" onclick="openNav()">
             <span class="sr-only">Open main menu</span>
             <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -28,46 +47,57 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
             </svg>
         </button>
+    </div>
 
-        <div
-            class="bg-white sm:bg-transparent hidden px-6 w-full sm:w-auto py-4 sm:mt-0 sm:block flex flex-col flex-grow sm:flex-grow-0 sm:flex-row menu-bg text-center rounded shadow-sm sm:shadow-none sm:bg-transparent"
-            id="navlinks">
-            <!-- <a href="/market" class="sm:mr-4 py-2 text-base sm:text-lg block sm:inline border-b sm:border-none">Market</a> -->
-            <a href="projects.html"
-               class="sm:mr-4 py-2 block sm:inline">
+    <!-- Mobile menu -->
+    <div class="md:hidden absolute top-16 rounded-md left-0 right-0 bg-gray-800 sm:bg-transparent hidden text-sm" id="navlinks">
+        <div class="container mx-auto px-6 md:px-8 xl:px-0 py-4 space-y-3">
+            <a href="projects.html" class="block text-white hover:underline transition duration-200" style="font-family: 'Bricolage Grotesque', sans-serif;">
                 Featured work
             </a>
-            <a href="articles.html" class="sm:mr-4 py-2 block sm:inline">
-                Articles
+            <a href="about.html" class="block text-white hover:underline transition duration-200" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                About
             </a>
-            <a href="contact.html"
-               class="sm:mr-4 py-2 block sm:inline">
-                Contact
-            </a>
-            <a href="Busayo_Oyewole_CV.pdf" target="_blank" download="Busayo_Oyewole_CV.pdf" class="block sm:inline mt-2 sm:mt-0">
-                <button class="btn bg-gray-700 hover:bg-yellow-600 rounded px-8 py-3 text-white">Download CV</button>
+            <a href="Busayo_Oyewole__CV.pdf" target="_blank" download="Busayo_Oyewole__CV.pdf" class="block w-full">
+                <button class="bg-gray-900 text-gray-100 rounded-lg text-xs font-semibold hover:bg-gray-700 px-4 py-1.5 transition-colors duration-200" style="font-family: 'Bricolage Grotesque', sans-serif;">Download CV</button>
             </a>
         </div>
     </div>
-</nav>
+  </nav>
 
-  <main class="text-gray-700 max-w-5xl mx-auto flex flex-col items-center justify-center mt-12 sm:mt-16 pb-40">
-    <div class="h-44 w-44 rounded-full bg-profile"></div>
-      <p class="text-2xl mt-3">Busayo Oyewole </p>
-      <h2 class="text-center mb-6 mt-1">Product designer, writer and instructor</h2>
-      <div class="bg-white rounded-lg shadow-sm pt-8 max-w-3xl">
-        <div class="px-4 sm:px-8 sm:text-lg">
-          <p class="pb-6">Hi there 👋 </p>
-          <p class="pb-6">My name is Busayo, I'm a product designer and problem solver from a psychology and usability engineering background. I love to focus on the big picture while still paying attention to the details, and I enjoy working with a team to create human-centered solutions.</p>
-          <p class="pb-6 text-gray-700">I've had experience designing and managing systems in both big and small companies, and in industries that range from B2B and B2C e-commerce to Fintech and marketplaces. </p>
-          <p class="pb-6 text-gray-700">In my free time, I dabble in different things such as writing a novel, creating a Udemy course, teaching design, or bouncing ideas off friends. I believe anything is possible, we need only try.</p>
+  <!-- Main Content - Two Sided Layout -->
+  <main class="flex flex-col xl:flex-row">
+    <!-- Mobile: Top / Desktop: Left Side - Text Content -->
+    <div class="w-full xl:w-1/2 flex items-center justify-center px-6 py-12 md:px-8 lg:px-16 order-2 md:order-1">
+        <div class="max-w-xl md:max-w-7xl xl:max-w-xl w-full md:pt-32 ">
+            <p class="text-5xl"><span class="wave-animation">👋</span></p>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                Busayo Oyewole
+            </h1>
+            <h2 class="text-xl text-gray-300 tracking-tight leading-tight mb-4 md:mb-6 mt-1 md:mt-4 xl:mt-2" style="font-family: 'Bricolage Grotesque', sans-serif;">Product designer</h2>
+            
+            <div class="space-y-4  text-gray-400 leading-relaxed text-sm md:text-lg">
+                
+                <p>Researching, designing, testing, coding, vibe-coding (hey Claude!), asking a lot of "whys", "what ifs", and "why-nots", and bouncing ideas off anyone who would listen.</p>
+            </div>
+            
+            <div class="mt-6 md:mt-8">
+                <a href="projects.html" class="inline-block bg-white hover:bg-gray-100 text-gray-900 hover:scale-105 px-6 py-3 rounded-xl font-semibold transition-colors duration-200 text-sm" style="font-family: 'Bricolage Grotesque', sans-serif;">
+                    See featured work →
+                </a>
+            </div>
         </div>
-        <a href="projects.html"><div class="bg-gray-700 px-6 py-3 rounded-b-lg text-white text-center font-bold">
-          <span class="mr-2">See featured work</span>
-        </div></a>
-      </div>
+    </div>
 
+    <!-- Mobile: Bottom / Desktop: Right Side - Profile Image -->
+    <div class="w-full xl:w-1/2 relative h-96 md:h-auto order-1 md:order-2">
+        <img src="images/profile-img.jpg" alt="profile image" class="w-full h-full object-cover object-top">
+        <!-- Gradient overlay for better text contrast -->
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-transparent"></div>
+    </div>
   </main>
+
+ 
 
 
       <!-- <hr> -->
@@ -84,12 +114,13 @@
   <script>
       function openNav() {
           var x = document.getElementById("navlinks");
-          if (x.style.display === "block") {
-              x.style.display = "none";
+          if (x.classList.contains("hidden")) {
+              x.classList.remove("hidden");
           } else {
-              x.style.display = "block";
+              x.classList.add("hidden");
           }
       }
+
   </script>
 </body>
 
